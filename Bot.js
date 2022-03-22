@@ -457,4 +457,5 @@ client.on('message', message =>{
     }
 })
 
-client.login('OTQ3MDk2OTc3MDYwMDEyMDYy.YhoSyw.GMFTo31vUJvq_qCjWIPrWvLTpPw');
+// insert the bot token
+client.login('');
