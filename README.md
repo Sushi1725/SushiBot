@@ -9,5 +9,13 @@ Then, from the terminal of node.js
 download discord.js
 https://discord.js.org/#/
 
-Paste the following into the terminal to download discord.js
+Paste the following into the node.js terminal to download discord.js: 
 npm install discord.js
+
+Once the previous are complete, 
+navigate to the folder the files are in your drive
+
+Type the following into the node.js terminal to navigate into the folder: 
+cd *the location of the file*
+
+If needed, press CTRL + C to close the bot
