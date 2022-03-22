@@ -1,0 +1,19 @@
+{
+  "name": "discordbot",
+  "version": "1.0.0",
+  "description": "SushiBot",
+  "main": "Bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shou-Yi Lai",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "github:discordjs/opus",
+    "@discordjs/voice": "^0.8.0",
+    "discord.js": "^13.6.0",
+    "discord.js-commando": "github:discordjs/Commando",
+    "enum": "^3.0.4",
+    "mathjs": "^10.1.1"
+  }
+}
