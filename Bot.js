@@ -33,16 +33,20 @@ client.on('message', message =>{
         client.channels.get(948116413393014814).send("yo")
     }
 
+    if(command === 'test'){
+        message.channel.send('hosting rn')
+    }
+
     if(command === 'ping'){
         message.channel.send('pong!')
     }
 
     if(command === 'images'){
-       message.channel.send('https://discord.gg/tRcUbbb2pF')
+        message.channel.send('https://discord.gg/tRcUbbb2pF')
     }
 
     if(command === 'compilation'){
-       message.channel.send('https://youtu.be/U0R1xiPYA-4')
+        message.channel.send('https://youtu.be/U0R1xiPYA-4')
     }
 
     if(command === 'github'){
@@ -438,6 +442,7 @@ client.on('message', message =>{
 
 // emre neonazi
 const emre = ['emre', 'Emre', 'eMre', 'EMre', 'emRe', 'EmRe', 'eMRe', 'EMRe', 'emrE', 'EmrE', 'eMrE', 'EMrE', 'emRE', 'EmRE', 'eMRE', 'EMRE']
+const omre = ['omre', 'Omre', 'oMre', 'OMre', 'omRe', 'OmRe', 'oMRe', 'OMRe', 'omrE', 'OmrE', 'oMrE', 'OMrE', 'omRE', 'OmRE', 'oMRE', 'OMRE']
 client.on('message', message =>{
     if (message.author == client.user)
         return
@@ -445,6 +450,12 @@ client.on('message', message =>{
 
     for (var f = 0; f < emre.length; f++) {
         if(message.content.includes(emre[f])) {
+            message.reply('is a neo nazi');
+        }
+    }
+
+    for (var e = 0; e < omre.length; e++) {
+        if(message.content.includes(omre[e])) {
             message.reply('is a neo nazi');
         }
     }
@@ -457,4 +468,24 @@ client.on('message', message =>{
     }
 })
 
-client.login('OTQ3MDk2OTc3MDYwMDEyMDYy.YhoSyw.GMFTo31vUJvq_qCjWIPrWvLTpPw');
+// Browns
+const brown = ['brown', 'Brown', 'bRown', 'BRown', 'brOwn', 'BrOwn', 'bROwn', 'BROwn', 'broWn', 'BroWn', 'bRoWn', 'BRoWn', 'brOWn', 'BrOWn', 'bROWn', 'BROWn', 'browN', 'BrowN', 'bRowN', 'BRowN', 'brOwN', 'BrOwN', 'bROwN', 'BROwN', 'broWN', 'BroWN', 'bRoWN', 'BRoWN', 'brOWN', 'BrOWN', 'bROWN', 'BROWN']
+const browns = ['browns', 'Browns', 'bRowns', 'BRowns', 'brOwns', 'BrOwns', 'bROwns', 'BROwns', 'broWns', 'BroWns', 'bRoWns', 'BRoWns', 'brOWns', 'BrOWns', 'bROWns', 'BROWns', 'browNs', 'BrowNs', 'bRowNs', 'BRowNs', 'brOwNs', 'BrOwNs', 'bROwNs', 'BROwNs', 'broWNs', 'BroWNs', 'bRoWNs', 'BRoWNs', 'brOWNs', 'BrOWNs', 'bROWNs', 'BROWNs', 'brownS', 'BrownS', 'bRownS', 'BRownS', 'brOwnS', 'BrOwnS', 'bROwnS', 'BROwnS', 'broWnS', 'BroWnS', 'bRoWnS', 'BRoWnS', 'brOWnS', 'BrOWnS', 'bROWnS', 'BROWnS', 'browNS', 'BrowNS', 'bRowNS', 'BRowNS', 'brOwNS', 'BrOwNS', 'bROwNS', 'BROwNS', 'broWNS', 'BroWNS', 'bRoWNS', 'BRoWNS', 'brOWNS', 'BrOWNS', 'bROWNS', 'BROWNS']
+client.on('message', message =>{
+    if (message.author == client.user)
+        return
+    if (message.author.bot) return
+
+    for (var k = 0; k < brown.length; k++) {
+        if(message.content === (brown[k])) {
+            message.reply('no good. \nhttps://cdn.discordapp.com/attachments/949179946662760470/955799423546437643/mango_glasses.jpg?size=4096');
+        }
+    }
+    for (var h = 0; h < browns.length; h++) {
+        if(message.content === (browns[h])) {
+            message.reply('no good. \nhttps://cdn.discordapp.com/attachments/949179946662760470/955799423546437643/mango_glasses.jpg?size=4096');
+        }
+    }
+})
+
+client.login('');
