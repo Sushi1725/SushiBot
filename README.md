@@ -16,6 +16,8 @@ Once the previous are complete,
 navigate to the folder the files are in your drive
 
 Type the following into the node.js terminal to navigate into the folder: 
-cd *the location of the file*
+"cd *the location of the file*"
+
+Then type the following: "node ."
 
 If needed, press CTRL + C to close the bot
