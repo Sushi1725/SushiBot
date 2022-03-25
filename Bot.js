@@ -329,7 +329,7 @@ client.on('message', message =>{
 
     for (var t = 0; t < hassanwords.length; t++) {
         if(message.content.includes(hassanwords[t])) {
-            message.reply('likes grace \nhttps://cdn.discordapp.com/attachments/949179946662760470/952517922197233724/IMG20220313214401.jpg');
+            message.reply('is gay');
         }
     }
 
