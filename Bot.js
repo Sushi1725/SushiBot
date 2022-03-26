@@ -37,18 +37,28 @@ client.on('message', message =>{
         message.channel.send('hosting rn')
     }
 
-// bot uptime tings
-    let totalSeconds = (client.uptime / 1000);
-    let days = Math.floor(totalSeconds / 86400);
-    totalSeconds %= 86400;
-    let hours = Math.floor(totalSeconds / 3600);
-    totalSeconds %= 3600;
-    let minutes = Math.floor(totalSeconds / 60);
-    let seconds = Math.floor(totalSeconds % 60);
-    let uptime = `${days} days, ${hours} hours, ${minutes} minutes and ${seconds} seconds`;
-
     if(command === 'uptime'){
-        message.channel.send(uptime)
+        // bot uptime tings
+        let totalSeconds = (client.uptime / 1000);
+        let days = Math.floor(totalSeconds / 86400);
+        totalSeconds %= 86400;
+        let hours = Math.floor(totalSeconds / 3600);
+        totalSeconds %= 3600;
+        let minutes = Math.floor(totalSeconds / 60);
+        let seconds = Math.floor(totalSeconds % 60);
+        let uptime = `${days} days, ${hours} hours, ${minutes} minutes and ${seconds} seconds`;
+
+        // message.channel.send(uptime)
+
+        const uptimeembed = new MessageEmbed()
+        .setColor('#c39167')
+        .setTitle('Uptime')
+        .setDescription(uptime)
+        .setTimestamp()
+        .setFooter({ text: 'Sushi🍣 × 賴守義#9501', iconURL: 'https://cdn.discordapp.com/attachments/948116413393014814/953225866513633330/unknown.png' });
+
+        message.channel.send({ embeds: [uptimeembed] });
+
     }
 
     if(command === 'images'){
