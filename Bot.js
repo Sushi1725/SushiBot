@@ -18,16 +18,6 @@ y.addListener("data", res => {
     client.channels.cache.get("949179946662760470").send(x.join(" "));
 });
 
-// bot uptime tings
-let totalSeconds = (client.uptime / 1000);
-let days = Math.floor(totalSeconds / 86400);
-totalSeconds %= 86400;
-let hours = Math.floor(totalSeconds / 3600);
-totalSeconds %= 3600;
-let minutes = Math.floor(totalSeconds / 60);
-let seconds = Math.floor(totalSeconds % 60);
-let uptime = `${days} days, ${hours} hours, ${minutes} minutes and ${seconds} seconds`;
-
 // bot commands
 client.on('message', message =>{
     if (message.author == client.user)
@@ -47,12 +37,22 @@ client.on('message', message =>{
         message.channel.send('hosting rn')
     }
 
+// bot uptime tings
+    let totalSeconds = (client.uptime / 1000);
+    let days = Math.floor(totalSeconds / 86400);
+    totalSeconds %= 86400;
+    let hours = Math.floor(totalSeconds / 3600);
+    totalSeconds %= 3600;
+    let minutes = Math.floor(totalSeconds / 60);
+    let seconds = Math.floor(totalSeconds % 60);
+    let uptime = `${days} days, ${hours} hours, ${minutes} minutes and ${seconds} seconds`;
+
     if(command === 'uptime'){
         message.channel.send(uptime)
     }
 
     if(command === 'ping'){
-        message.channel.send('pong!')
+        message.channel.send('pong! (`~ ' + client.ping + 'ms`)')
     }
 
     if(command === 'images'){
