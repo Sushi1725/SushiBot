@@ -51,12 +51,12 @@ client.on('message', message =>{
         message.channel.send(uptime)
     }
 
-    if(command === 'ping'){
-        message.channel.send('pong! (`~ ' + client.ping + 'ms`)')
-    }
-
     if(command === 'images'){
         message.channel.send('https://discord.gg/tRcUbbb2pF')
+    }
+
+    if(command === 'ping'){
+        message.channel.send((`pong! \`${Date.now() - message.createdTimestamp}ms\``))
     }
 
     if(command === 'compilation'){
