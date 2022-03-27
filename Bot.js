@@ -227,13 +227,43 @@ client.on('message', msg => {
     }
 });
 
-// i am ___
+// i am ___ + knows ur address + liar
 const hello_ = ['i am', 'I am', 'i am', 'I am', 'i Am', 'I Am', 'i Am', 'I Am', 'i aM', 'I aM', 'i aM', 'I aM', 'i AM', 'I AM', 'i AM', 'I AM', 'i\'m', 'I\'m', 'i\'M', 'I\'M'];
 const im = ['im ', 'Im ', 'iM ', 'IM ']
+const sushi = ['sushi', 'Sushi', 'sUshi', 'SUshi', 'suShi', 'SuShi', 'sUShi', 'SUShi', 'susHi', 'SusHi', 'sUsHi', 'SUsHi', 'suSHi', 'SuSHi', 'sUSHi', 'SUSHi', 'sushI', 'SushI', 'sUshI', 'SUshI', 'suShI', 'SuShI', 'sUShI', 'SUShI', 'susHI', 'SusHI', 'sUsHI', 'SUsHI', 'suSHI', 'SuSHI', 'sUSHI', 'SUSHI']
+const shouyi = ['shou-yi', 'Shou-yi', 'sHou-yi', 'SHou-yi', 'shOu-yi', 'ShOu-yi', 'sHOu-yi', 'SHOu-yi', 'shoU-yi', 'ShoU-yi', 'sHoU-yi', 'SHoU-yi', 'shOU-yi', 'ShOU-yi', 'sHOU-yi', 'SHOU-yi', 'shou-yi', 'Shou-yi', 'sHou-yi', 'SHou-yi', 'shOu-yi', 'ShOu-yi', 'sHOu-yi', 'SHOu-yi', 'shoU-yi', 'ShoU-yi', 'sHoU-yi', 'SHoU-yi', 'shOU-yi', 'ShOU-yi', 'sHOU-yi', 'SHOU-yi', 'shou-Yi', 'Shou-Yi', 'sHou-Yi', 'SHou-Yi', 'shOu-Yi', 'ShOu-Yi', 'sHOu-Yi', 'SHOu-Yi', 'shoU-Yi', 'ShoU-Yi', 'sHoU-Yi', 'SHoU-Yi', 'shOU-Yi', 'ShOU-Yi', 'sHOU-Yi', 'SHOU-Yi', 'shou-Yi', 'Shou-Yi', 'sHou-Yi', 'SHou-Yi', 'shOu-Yi', 'ShOu-Yi', 'sHOu-Yi', 'SHOu-Yi', 'shoU-Yi', 'ShoU-Yi', 'sHoU-Yi', 'SHoU-Yi', 'shOU-Yi', 'ShOU-Yi', 'sHOU-Yi', 'SHOU-Yi', 'shou-yI', 'Shou-yI', 'sHou-yI', 'SHou-yI', 'shOu-yI', 'ShOu-yI', 'sHOu-yI', 'SHOu-yI', 'shoU-yI', 'ShoU-yI', 'sHoU-yI', 'SHoU-yI', 'shOU-yI', 'ShOU-yI', 'sHOU-yI', 'SHOU-yI', 'shou-yI', 'Shou-yI', 'sHou-yI', 'SHou-yI', 'shOu-yI', 'ShOu-yI', 'sHOu-yI', 'SHOu-yI', 'shoU-yI', 'ShoU-yI', 'sHoU-yI', 'SHoU-yI', 'shOU-yI', 'ShOU-yI', 'sHOU-yI', 'SHOU-yI', 'shou-YI', 'Shou-YI', 'sHou-YI', 'SHou-YI', 'shOu-YI', 'ShOu-YI', 'sHOu-YI', 'SHOu-YI', 'shoU-YI', 'ShoU-YI', 'sHoU-YI', 'SHoU-YI', 'shOU-YI', 'ShOU-YI', 'sHOU-YI', 'SHOU-YI', 'shou-YI', 'Shou-YI', 'sHou-YI', 'SHou-YI', 'shOu-YI', 'ShOu-YI', 'sHOu-YI', 'SHOu-YI', 'shoU-YI', 'ShoU-YI', 'sHoU-YI', 'SHoU-YI', 'shOU-YI', 'ShOU-YI', 'sHOU-YI', 'SHOU-YI']
+const sushibot = ['sushibot', 'Sushibot', 'sUshibot', 'SUshibot', 'suShibot', 'SuShibot', 'sUShibot', 'SUShibot', 'susHibot', 'SusHibot', 'sUsHibot', 'SUsHibot', 'suSHibot', 'SuSHibot', 'sUSHibot', 'SUSHibot', 'sushIbot', 'SushIbot', 'sUshIbot', 'SUshIbot', 'suShIbot', 'SuShIbot', 'sUShIbot', 'SUShIbot', 'susHIbot', 'SusHIbot', 'sUsHIbot', 'SUsHIbot', 'suSHIbot', 'SuSHIbot', 'sUSHIbot', 'SUSHIbot', 'sushiBot', 'SushiBot', 'sUshiBot', 'SUshiBot', 'suShiBot', 'SuShiBot', 'sUShiBot', 'SUShiBot', 'susHiBot', 'SusHiBot', 'sUsHiBot', 'SUsHiBot', 'suSHiBot', 'SuSHiBot', 'sUSHiBot', 'SUSHiBot', 'sushIBot', 'SushIBot', 'sUshIBot', 'SUshIBot', 'suShIBot', 'SuShIBot', 'sUShIBot', 'SUShIBot', 'susHIBot', 'SusHIBot', 'sUsHIBot', 'SUsHIBot', 'suSHIBot', 'SuSHIBot', 'sUSHIBot', 'SUSHIBot', 'sushibOt', 'SushibOt', 'sUshibOt', 'SUshibOt', 'suShibOt', 'SuShibOt', 'sUShibOt', 'SUShibOt', 'susHibOt', 'SusHibOt', 'sUsHibOt', 'SUsHibOt', 'suSHibOt', 'SuSHibOt', 'sUSHibOt', 'SUSHibOt', 'sushIbOt', 'SushIbOt', 'sUshIbOt', 'SUshIbOt', 'suShIbOt', 'SuShIbOt', 'sUShIbOt', 'SUShIbOt', 'susHIbOt', 'SusHIbOt', 'sUsHIbOt', 'SUsHIbOt', 'suSHIbOt', 'SuSHIbOt', 'sUSHIbOt', 'SUSHIbOt', 'sushiBOt', 'SushiBOt', 'sUshiBOt', 'SUshiBOt', 'suShiBOt', 'SuShiBOt', 'sUShiBOt', 'SUShiBOt', 'susHiBOt', 'SusHiBOt', 'sUsHiBOt', 'SUsHiBOt', 'suSHiBOt', 'SuSHiBOt', 'sUSHiBOt', 'SUSHiBOt', 'sushIBOt', 'SushIBOt', 'sUshIBOt', 'SUshIBOt', 'suShIBOt']
+const susibot = ['SuShIBOt', 'sUShIBOt', 'SUShIBOt', 'susHIBOt', 'SusHIBOt', 'sUsHIBOt', 'SUsHIBOt', 'suSHIBOt', 'SuSHIBOt', 'sUSHIBOt', 'SUSHIBOt', 'sushiboT', 'SushiboT', 'sUshiboT', 'SUshiboT', 'suShiboT', 'SuShiboT', 'sUShiboT', 'SUShiboT', 'susHiboT', 'SusHiboT', 'sUsHiboT', 'SUsHiboT', 'suSHiboT', 'SuSHiboT', 'sUSHiboT', 'SUSHiboT', 'sushIboT', 'SushIboT', 'sUshIboT', 'SUshIboT', 'suShIboT', 'SuShIboT', 'sUShIboT', 'SUShIboT', 'susHIboT', 'SusHIboT', 'sUsHIboT', 'SUsHIboT', 'suSHIboT', 'SuSHIboT', 'sUSHIboT', 'SUSHIboT', 'sushiBoT', 'SushiBoT', 'sUshiBoT', 'SUshiBoT', 'suShiBoT', 'SuShiBoT', 'sUShiBoT', 'SUShiBoT', 'susHiBoT', 'SusHiBoT', 'sUsHiBoT', 'SUsHiBoT', 'suSHiBoT', 'SuSHiBoT', 'sUSHiBoT', 'SUSHiBoT', 'sushIBoT', 'SushIBoT', 'sUshIBoT', 'SUshIBoT', 'suShIBoT', 'SuShIBoT', 'sUShIBoT', 'SUShIBoT', 'susHIBoT', 'SusHIBoT', 'sUsHIBoT', 'SUsHIBoT', 'suSHIBoT', 'SuSHIBoT', 'sUSHIBoT', 'SUSHIBoT', 'sushibOT', 'SushibOT', 'sUshibOT', 'SUshibOT', 'suShibOT', 'SuShibOT', 'sUShibOT', 'SUShibOT', 'susHibOT', 'SusHibOT', 'sUsHibOT', 'SUsHibOT', 'suSHibOT', 'SuSHibOT', 'sUSHibOT', 'SUSHibOT', 'sushIbOT', 'SushIbOT', 'sUshIbOT', 'SUshIbOT', 'suShIbOT', 'SuShIbOT', 'sUShIbOT', 'SUShIbOT', 'susHIbOT', 'SusHIbOT', 'sUsHIbOT', 'SUsHIbOT', 'suSHIbOT', 'SuSHIbOT', 'sUSHIbOT', 'SUSHIbOT', 'sushiBOT', 'SushiBOT', 'sUshiBOT', 'SUshiBOT', 'suShiBOT', 'SuShiBOT', 'sUShiBOT', 'SUShiBOT', 'susHiBOT', 'SusHiBOT', 'sUsHiBOT', 'SUsHiBOT', 'suSHiBOT', 'SuSHiBOT', 'sUSHiBOT', 'SUSHiBOT', 'sushIBOT', 'SushIBOT', 'sUshIBOT', 'SUshIBOT', 'suShIBOT', 'SuShIBOT', 'sUShIBOT', 'SUShIBOT', 'susHIBOT', 'SusHIBOT', 'sUsHIBOT', 'SUsHIBOT', 'suSHIBOT', 'SuSHIBOT', 'sUSHIBOT', 'SUSHIBOT']
 client.on('message', msg => {
     if (msg.author == client.user)
         return
     if (msg.author.bot) return
+
+    for (var p = 0; p < sushibot.length; p++) {
+        if(msg.content.includes(sushibot[p])) {
+            msg.reply('no you\'re not you frickin liar');
+            break;
+        }
+    }
+
+    for (var w = 0; w < susibot.length; w++) {
+        if(msg.content.includes(susibot[w])) {
+            msg.reply('no you\'re not you frickin liar');
+            break;
+        }
+    }
+    
+    for (var k = 0; k < sushi.length; k++) {
+        if(msg.content === (sushi[k])) {
+            msg.reply('knows ur address');
+        }
+    }
+
+    for (var s = 0; s < shouyi.length; s++) {
+        if(msg.content === (shouyi[s])) {
+            msg.reply('knows ur address');
+        }
+    }
 
     for (var h = 0; h < hello_.length; h++) {
         const array = msg.content.indexOf(hello_[h]);
@@ -442,28 +472,6 @@ client.on('message', message => {
     }
 });
 
-// know's ur address
-const sushi = ['sushi', 'Sushi', 'sUshi', 'SUshi', 'suShi', 'SuShi', 'sUShi', 'SUShi', 'susHi', 'SusHi', 'sUsHi', 'SUsHi', 'suSHi', 'SuSHi', 'sUSHi', 'SUSHi', 'sushI', 'SushI', 'sUshI', 'SUshI', 'suShI', 'SuShI', 'sUShI', 'SUShI', 'susHI', 'SusHI', 'sUsHI', 'SUsHI', 'suSHI', 'SuSHI', 'sUSHI', 'SUSHI']
-const shouyi = ['shou-yi', 'Shou-yi', 'sHou-yi', 'SHou-yi', 'shOu-yi', 'ShOu-yi', 'sHOu-yi', 'SHOu-yi', 'shoU-yi', 'ShoU-yi', 'sHoU-yi', 'SHoU-yi', 'shOU-yi', 'ShOU-yi', 'sHOU-yi', 'SHOU-yi', 'shou-yi', 'Shou-yi', 'sHou-yi', 'SHou-yi', 'shOu-yi', 'ShOu-yi', 'sHOu-yi', 'SHOu-yi', 'shoU-yi', 'ShoU-yi', 'sHoU-yi', 'SHoU-yi', 'shOU-yi', 'ShOU-yi', 'sHOU-yi', 'SHOU-yi', 'shou-Yi', 'Shou-Yi', 'sHou-Yi', 'SHou-Yi', 'shOu-Yi', 'ShOu-Yi', 'sHOu-Yi', 'SHOu-Yi', 'shoU-Yi', 'ShoU-Yi', 'sHoU-Yi', 'SHoU-Yi', 'shOU-Yi', 'ShOU-Yi', 'sHOU-Yi', 'SHOU-Yi', 'shou-Yi', 'Shou-Yi', 'sHou-Yi', 'SHou-Yi', 'shOu-Yi', 'ShOu-Yi', 'sHOu-Yi', 'SHOu-Yi', 'shoU-Yi', 'ShoU-Yi', 'sHoU-Yi', 'SHoU-Yi', 'shOU-Yi', 'ShOU-Yi', 'sHOU-Yi', 'SHOU-Yi', 'shou-yI', 'Shou-yI', 'sHou-yI', 'SHou-yI', 'shOu-yI', 'ShOu-yI', 'sHOu-yI', 'SHOu-yI', 'shoU-yI', 'ShoU-yI', 'sHoU-yI', 'SHoU-yI', 'shOU-yI', 'ShOU-yI', 'sHOU-yI', 'SHOU-yI', 'shou-yI', 'Shou-yI', 'sHou-yI', 'SHou-yI', 'shOu-yI', 'ShOu-yI', 'sHOu-yI', 'SHOu-yI', 'shoU-yI', 'ShoU-yI', 'sHoU-yI', 'SHoU-yI', 'shOU-yI', 'ShOU-yI', 'sHOU-yI', 'SHOU-yI', 'shou-YI', 'Shou-YI', 'sHou-YI', 'SHou-YI', 'shOu-YI', 'ShOu-YI', 'sHOu-YI', 'SHOu-YI', 'shoU-YI', 'ShoU-YI', 'sHoU-YI', 'SHoU-YI', 'shOU-YI', 'ShOU-YI', 'sHOU-YI', 'SHOU-YI', 'shou-YI', 'Shou-YI', 'sHou-YI', 'SHou-YI', 'shOu-YI', 'ShOu-YI', 'sHOu-YI', 'SHOu-YI', 'shoU-YI', 'ShoU-YI', 'sHoU-YI', 'SHoU-YI', 'shOU-YI', 'ShOU-YI', 'sHOU-YI', 'SHOU-YI']
-client.on('message', message =>{
-    if (message.author == client.user)
-    return
-    if (message.author.bot) return
-
-    for (var k = 0; k < sushi.length; k++) {
-        if(message.content.includes(sushi[k])) {
-            message.reply('knows ur address');
-        }
-    }
-
-    for (var s = 0; s < shouyi.length; s++) {
-        if(message.content.includes(shouyi[s])) {
-            message.reply('knows ur address');
-        }
-    }
-
-})
-
 // emre neonazi
 const emre = ['emre', 'Emre', 'eMre', 'EMre', 'emRe', 'EmRe', 'eMRe', 'EMRe', 'emrE', 'EmrE', 'eMrE', 'EMrE', 'emRE', 'EmRE', 'eMRE', 'EMRE']
 const omre = ['omre', 'Omre', 'oMre', 'OMre', 'omRe', 'OmRe', 'oMRe', 'OMRe', 'omrE', 'OmrE', 'oMrE', 'OMrE', 'omRE', 'OmRE', 'oMRE', 'OMRE']
@@ -510,6 +518,20 @@ client.on('message', message =>{
             message.reply('no good. \nhttps://cdn.discordapp.com/attachments/949179946662760470/955799423546437643/mango_glasses.jpg?size=4096');
         }
     }
+})
+
+// mute chris
+// rn only mutes the user who says it
+client.on('message', message => {
+    if(message.content.includes('chris')){
+        let role = message.guild.roles.cache.find(role => role.name === 'Muted')
+        const elvis = ('450213033701146636')
+        message.member.roles.add(role, '450213033701146636')
+        setTimeout(function(){
+            message.member.roles.remove(role, '450213033701146636')
+        },10000);
+    }
+
 })
 
 client.login('');
