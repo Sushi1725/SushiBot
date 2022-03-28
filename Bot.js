@@ -524,11 +524,17 @@ client.on('message', message =>{
 // rn only mutes the user who says it
 client.on('message', message => {
     if(message.content.includes('chris')){
-        let role = message.guild.roles.cache.find(role => role.name === 'Muted')
-        const elvis = ('450213033701146636')
-        message.member.roles.add(role, '450213033701146636')
+        const role = message.guild.roles.cache.find(role => role.name === 'Muted')
+
+        const member = client.users.cache.find(user => user.id === '947096977060012062')
+
+        // member.roles.add(role)
+        message.member.roles.add(role)
+        message.channel.send("Christopher Davis is now muted for 10 seconds")
+
         setTimeout(function(){
-            message.member.roles.remove(role, '450213033701146636')
+            message.member.roles.remove(role)
+            message.channel.send("Christopher Davis is now unmuted")
         },10000);
     }
 
