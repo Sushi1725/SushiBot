@@ -522,22 +522,32 @@ client.on('message', message =>{
 
 // mute chris
 // rn only mutes the user who says it
+const chris = ['chris', 'Chris', 'cHris', 'CHris', 'chRis', 'ChRis', 'cHRis', 'CHRis', 'chrIs', 'ChrIs', 'cHrIs', 'CHrIs', 'chRIs', 'ChRIs', 'cHRIs', 'CHRIs', 'chriS', 'ChriS', 'cHriS', 'CHriS', 'chRiS', 'ChRiS', 'cHRiS', 'CHRiS', 'chrIS', 'ChrIS', 'cHrIS', 'CHrIS', 'chRIS', 'ChRIS', 'cHRIS', 'CHRIS']
 client.on('message', message => {
-    if(message.content.includes('chris')){
-        const role = message.guild.roles.cache.find(role => role.name === 'Muted')
+    if (message.author == client.user)
+        return
+    if (message.author.bot) return
 
-        const member = client.users.cache.find(user => user.id === '947096977060012062')
+    for (var p = 0; p < chris.length; p++) {
+        if(message.content.includes(chris[p])){
+            const role = message.guild.roles.cache.find(role => role.name === 'Muted')
 
-        // member.roles.add(role)
-        message.member.roles.add(role)
-        message.channel.send("Christopher Davis is now muted for 10 seconds")
+            // const memer = message.guildmember.cache.get('450213033701146636')
+            // const member = guild.user.id.fetch("450213033701146636")
+            // const target = message.mentions.members == ('450213033701146636');
+            // const user = .cache.fetch
 
-        setTimeout(function(){
-            message.member.roles.remove(role)
-            message.channel.send("Christopher Davis is now unmuted")
-        },10000);
+            // member.roles.add(role)
+            message.member.roles.add(role)
+            message.channel.send("You are now muted for 10 seconds")
+
+            setTimeout(function(){
+                // member.roles.remove(role)
+                message.member.roles.remove(role)
+                message.channel.send("You are now unmuted")
+            },10000);
+        }
     }
-
 })
 
 client.login('');
