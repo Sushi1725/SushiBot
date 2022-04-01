@@ -361,6 +361,7 @@ client.on('message', msg =>{
 
 // hassan is gay
 const hassanwords = ["hassan", "Hassan", "hAssan", "HAssan", "haSsan", "HaSsan", "hASsan", "HASsan", "hasSan", "HasSan", "hAsSan", "HAsSan", "haSSan", "HaSSan", "hASSan", "HASSan", "hassAn", "HassAn", "hAssAn", "HAssAn", "haSsAn", "HaSsAn", "hASsAn", "HASsAn", "hasSAn", "HasSAn", "hAsSAn", "HAsSAn", "haSSAn", "HaSSAn", "hASSAn", "HASSAn", "hassaN", "HassaN", "hAssaN", "HAssaN", "haSsaN", "HaSsaN", "hASsaN", "HASsaN", "hasSaN", "HasSaN", "hAsSaN", "HAsSaN", "haSSaN", "HaSSaN", "hASSaN", "HASSaN", "hassAN", "HassAN", "hAssAN", "HAssAN", "haSsAN", "HaSsAN", "hASsAN", "HASsAN", "hasSAN", "HasSAN", "hAsSAN", "HAsSAN", "haSSAN", "HaSSAN", "hASSAN", "HASSAN"]
+const syed = ['syed', 'Syed', 'sYed', 'SYed', 'syEd', 'SyEd', 'sYEd', 'SYEd', 'syeD', 'SyeD', 'sYeD', 'SYeD', 'syED', 'SyED', 'sYED', 'SYED']
 client.on('message', message =>{
     // if (message.author.bot) return;
     if (message.author == client.user)
@@ -369,6 +370,12 @@ client.on('message', message =>{
 
     for (var t = 0; t < hassanwords.length; t++) {
         if(message.content.includes(hassanwords[t])) {
+            message.reply('is gay');
+        }
+    }
+
+    for (var p = 0; p < syed.length; p++) {
+        if(message.content.includes(syed[p])) {
             message.reply('is gay');
         }
     }
@@ -528,14 +535,15 @@ client.on('message', message => {
         return
     if (message.author.bot) return
 
+    const role = message.guild.roles.cache.find(role => role.name === 'Muted')
+
+    // const memer = message.guildmember.cache.get('450213033701146636')
+    // const member = guild.user.id.fetch("450213033701146636")
+    // const target = message.mentions.members == ('450213033701146636');
+    // const user = .cache.fetch
+
     for (var p = 0; p < chris.length; p++) {
         if(message.content.includes(chris[p])){
-            const role = message.guild.roles.cache.find(role => role.name === 'Muted')
-
-            // const memer = message.guildmember.cache.get('450213033701146636')
-            // const member = guild.user.id.fetch("450213033701146636")
-            // const target = message.mentions.members == ('450213033701146636');
-            // const user = .cache.fetch
 
             // member.roles.add(role)
             message.member.roles.add(role)
