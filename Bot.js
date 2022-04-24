@@ -29,6 +29,19 @@ client.on('message', message =>{
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
 
+//self destruct command
+    // if(command === 'STOP'){
+    //     if(message.author == ('626688631309991937')){
+    //         client.log('client destroyed')
+    //         message.channel.send("Shutting down...")
+    //         setTimeout(function(){
+    //             client.destroy();
+    //         },50);
+    //     }
+    // } else {
+    //     message.reply("Uh oh, you do not have the permissions to do that")
+    // }
+
     if(command === 'next'){
         client.channels.get(948116413393014814).send("yo")
     }
@@ -63,6 +76,10 @@ client.on('message', message =>{
 
     if(command === 'images'){
         message.channel.send('https://discord.gg/tRcUbbb2pF')
+    }
+
+    if(command === 'nigga'){
+        message.channel.send('There are currently `5` browns within *The Birdage* \n <@&953942592284921906>')
     }
 
     if(command === 'ping'){
@@ -345,6 +362,34 @@ client.on('message', msg =>{
     }
 });
 
+const carrot = ['carrot', 'Carrot', 'cArrot', 'CArrot', 'caRrot', 'CaRrot', 'cARrot', 'CARrot', 'carRot', 'CarRot', 'cArRot', 'CArRot', 'caRRot', 'CaRRot', 'cARRot', 'CARRot', 'carrOt', 'CarrOt', 'cArrOt', 'CArrOt', 'caRrOt', 'CaRrOt', 'cARrOt', 'CARrOt', 'carROt', 'CarROt', 'cArROt', 'CArROt', 'caRROt', 'CaRROt', 'cARROt', 'CARROt', 'carroT', 'CarroT', 'cArroT', 'CArroT', 'caRroT', 'CaRroT', 'cARroT', 'CARroT', 'carRoT', 'CarRoT', 'cArRoT', 'CArRoT', 'caRRoT', 'CaRRoT', 'cARRoT', 'CARRoT', 'carrOT', 'CarrOT', 'cArrOT', 'CArrOT', 'caRrOT', 'CaRrOT', 'cARrOT', 'CARrOT', 'carROT', 'CarROT', 'cArROT', 'CArROT', 'caRROT', 'CaRROT', 'cARROT', 'CARROT']
+const caroline = ['caroline', 'Caroline', 'cAroline', 'CAroline', 'caRoline', 'CaRoline', 'cARoline', 'CARoline', 'carOline', 'CarOline', 'cArOline', 'CArOline', 'caROline', 'CaROline', 'cAROline', 'CAROline', 'caroLine', 'CaroLine', 'cAroLine', 'CAroLine', 'caRoLine', 'CaRoLine', 'cARoLine', 'CARoLine', 'carOLine', 'CarOLine', 'cArOLine', 'CArOLine', 'caROLine', 'CaROLine', 'cAROLine', 'CAROLine', 'carolIne', 'CarolIne', 'cArolIne', 'CArolIne', 'caRolIne', 'CaRolIne', 'cARolIne', 'CARolIne', 'carOlIne', 'CarOlIne', 'cArOlIne', 'CArOlIne', 'caROlIne', 'CaROlIne', 'cAROlIne', 'CAROlIne', 'caroLIne', 'CaroLIne', 'cAroLIne', 'CAroLIne', 'caRoLIne', 'CaRoLIne', 'cARoLIne', 'CARoLIne', 'carOLIne', 'CarOLIne', 'cArOLIne', 'CArOLIne', 'caROLIne', 'CaROLIne', 'cAROLIne', 'CAROLIne', 'caroliNe', 'CaroliNe', 'cAroliNe', 'CAroliNe', 'caRoliNe', 'CaRoliNe', 'cARoliNe', 'CARoliNe', 'carOliNe', 'CarOliNe', 'cArOliNe', 'CArOliNe', 'caROliNe', 'CaROliNe', 'cAROliNe', 'CAROliNe', 'caroLiNe', 'CaroLiNe', 'cAroLiNe', 'CAroLiNe', 'caRoLiNe', 'CaRoLiNe', 'cARoLiNe', 'CARoLiNe', 'carOLiNe', 'CarOLiNe', 'cArOLiNe', 'CArOLiNe', 'caROLiNe', 'CaROLiNe', 'cAROLiNe', 'CAROLiNe', 'carolINe', 'CarolINe', 'cArolINe', 'CArolINe', 'caRolINe', 'CaRolINe', 'cARolINe', 'CARolINe', 'carOlINe', 'CarOlINe', 'cArOlINe', 'CArOlINe']
+const caro = ['caROlINe', 'CaROlINe', 'cAROlINe', 'CAROlINe', 'caroLINe', 'CaroLINe', 'cAroLINe', 'CAroLINe', 'caRoLINe', 'CaRoLINe', 'cARoLINe', 'CARoLINe', 'carOLINe', 'CarOLINe', 'cArOLINe', 'CArOLINe', 'caROLINe', 'CaROLINe', 'cAROLINe', 'CAROLINe', 'carolinE', 'CarolinE', 'cArolinE', 'CArolinE', 'caRolinE', 'CaRolinE', 'cARolinE', 'CARolinE', 'carOlinE', 'CarOlinE', 'cArOlinE', 'CArOlinE', 'caROlinE', 'CaROlinE', 'cAROlinE', 'CAROlinE', 'caroLinE', 'CaroLinE', 'cAroLinE', 'CAroLinE', 'caRoLinE', 'CaRoLinE', 'cARoLinE', 'CARoLinE', 'carOLinE', 'CarOLinE', 'cArOLinE', 'CArOLinE', 'caROLinE', 'CaROLinE', 'cAROLinE', 'CAROLinE', 'carolInE', 'CarolInE', 'cArolInE', 'CArolInE', 'caRolInE', 'CaRolInE', 'cARolInE', 'CARolInE', 'carOlInE', 'CarOlInE', 'cArOlInE', 'CArOlInE', 'caROlInE', 'CaROlInE', 'cAROlInE', 'CAROlInE', 'caroLInE', 'CaroLInE', 'cAroLInE', 'CAroLInE', 'caRoLInE', 'CaRoLInE', 'cARoLInE', 'CARoLInE', 'carOLInE', 'CarOLInE', 'cArOLInE', 'CArOLInE', 'caROLInE', 'CaROLInE', 'cAROLInE', 'CAROLInE', 'caroliNE', 'CaroliNE', 'cAroliNE', 'CAroliNE', 'caRoliNE', 'CaRoliNE', 'cARoliNE', 'CARoliNE', 'carOliNE', 'CarOliNE', 'cArOliNE', 'CArOliNE', 'caROliNE', 'CaROliNE', 'cAROliNE', 'CAROliNE', 'caroLiNE', 'CaroLiNE', 'cAroLiNE', 'CAroLiNE', 'caRoLiNE', 'CaRoLiNE', 'cARoLiNE', 'CARoLiNE', 'carOLiNE', 'CarOLiNE', 'cArOLiNE', 'CArOLiNE', 'caROLiNE', 'CaROLiNE', 'cAROLiNE', 'CAROLiNE', 'carolINE', 'CarolINE', 'cArolINE', 'CArolINE', 'caRolINE', 'CaRolINE', 'cARolINE', 'CARolINE', 'carOlINE', 'CarOlINE', 'cArOlINE', 'CArOlINE', 'caROlINE', 'CaROlINE', 'cAROlINE', 'CAROlINE', 'caroLINE', 'CaroLINE', 'cAroLINE', 'CAroLINE', 'caRoLINE', 'CaRoLINE', 'cARoLINE', 'CARoLINE', 'carOLINE', 'CarOLINE', 'cArOLINE', 'CArOLINE', 'caROLINE', 'CaROLINE', 'cAROLINE', 'CAROLINE']
+client.on('message', message =>{
+    if (message.author == client.user)
+    return
+    if (message.author.bot) return
+
+    for (var p = 0; p < carrot.length; p++){
+        if(message.content === (carrot[p])){
+            message.reply('https://cdn.discordapp.com/attachments/844505178166394880/895831051228819506/unknown.png?size=4096')
+        }
+    }
+
+    for (var u = 0; u < caroline.length; u++) {
+        if(message.content === (caroline[u])) {
+            message.reply('https://cdn.discordapp.com/attachments/844505178166394880/895831051228819506/unknown.png?size=4096');
+        }
+    }
+
+    for (var q = 0; q < caro.length; q++) {
+        if(message.content === (caro[q])) {
+            message.reply('https://cdn.discordapp.com/attachments/844505178166394880/895831051228819506/unknown.png?size=4096');
+        }
+    }
+
+})
+
 // fuck the ccp
 const ccp = ['ccp', 'ccP', 'cCp', 'Ccp', 'cCP', 'CCP', 'CCp', 'CcP']
 client.on('message', msg =>{
@@ -362,6 +407,7 @@ client.on('message', msg =>{
 // hassan is gay
 const hassanwords = ["hassan", "Hassan", "hAssan", "HAssan", "haSsan", "HaSsan", "hASsan", "HASsan", "hasSan", "HasSan", "hAsSan", "HAsSan", "haSSan", "HaSSan", "hASSan", "HASSan", "hassAn", "HassAn", "hAssAn", "HAssAn", "haSsAn", "HaSsAn", "hASsAn", "HASsAn", "hasSAn", "HasSAn", "hAsSAn", "HAsSAn", "haSSAn", "HaSSAn", "hASSAn", "HASSAn", "hassaN", "HassaN", "hAssaN", "HAssaN", "haSsaN", "HaSsaN", "hASsaN", "HASsaN", "hasSaN", "HasSaN", "hAsSaN", "HAsSaN", "haSSaN", "HaSSaN", "hASSaN", "HASSaN", "hassAN", "HassAN", "hAssAN", "HAssAN", "haSsAN", "HaSsAN", "hASsAN", "HASsAN", "hasSAN", "HasSAN", "hAsSAN", "HAsSAN", "haSSAN", "HaSSAN", "hASSAN", "HASSAN"]
 const syed = ['syed', 'Syed', 'sYed', 'SYed', 'syEd', 'SyEd', 'sYEd', 'SYEd', 'syeD', 'SyeD', 'sYeD', 'SYeD', 'syED', 'SyED', 'sYED', 'SYED']
+const haider = ['haider', 'Haider', 'hAider', 'HAider', 'haIder', 'HaIder', 'hAIder', 'HAIder', 'haiDer', 'HaiDer', 'hAiDer', 'HAiDer', 'haIDer', 'HaIDer', 'hAIDer', 'HAIDer', 'haidEr', 'HaidEr', 'hAidEr', 'HAidEr', 'haIdEr', 'HaIdEr', 'hAIdEr', 'HAIdEr', 'haiDEr', 'HaiDEr', 'hAiDEr', 'HAiDEr', 'haIDEr', 'HaIDEr', 'hAIDEr', 'HAIDEr', 'haideR', 'HaideR', 'hAideR', 'HAideR', 'haIdeR', 'HaIdeR', 'hAIdeR', 'HAIdeR', 'haiDeR', 'HaiDeR', 'hAiDeR', 'HAiDeR', 'haIDeR', 'HaIDeR', 'hAIDeR', 'HAIDeR', 'haidER', 'HaidER', 'hAidER', 'HAidER', 'haIdER', 'HaIdER', 'hAIdER', 'HAIdER', 'haiDER', 'HaiDER', 'hAiDER', 'HAiDER', 'haIDER', 'HaIDER', 'hAIDER', 'HAIDER']
 client.on('message', message =>{
     // if (message.author.bot) return;
     if (message.author == client.user)
@@ -385,6 +431,13 @@ client.on('message', message =>{
         message.reply('is gay');
         if (message.author.bot) return;
     }
+
+    for(var o = 0; o < haider.length; o++){
+        if(message.content.includes(haider[o])){
+            message.reply('https://tenor.com/view/goodnight-haider-good-night-bigmansdreams61-gif-21556753')
+        }
+    }
+
 })
 
 // nig + clipped
@@ -558,4 +611,4 @@ client.on('message', message => {
     }
 })
 
-client.login('');
+client.login('OTQ3MDk2OTc3MDYwMDEyMDYy.YhoSyw.6gdDICRKNKWZ7cHfixg0q2VPZck');
