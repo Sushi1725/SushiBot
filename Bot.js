@@ -79,7 +79,7 @@ client.on('message', message =>{
     }
 
     if(command === 'nigga'){
-        message.channel.send('There are currently `5` browns within *The Birdage* \n <@&953942592284921906>')
+        message.channel.send('There are currently `7` browns within *The Birdage* \n <@&953942592284921906>')
     }
 
     if(command === 'ping'){
