@@ -9,7 +9,8 @@ const { MessageAttachment } = require('discord.js');
 // for when the bot starts up
 client.once('ready', () => {
     console.log('SushiBot is online!')
-    client.user.setActivity(' Mr Liang\'s tongue', { type: 'WATCHING' });
+    // client.user.setActivity(' Mr Liang\'s tongue', { type: 'WATCHING' });
+    client.user.setActivity(' the Birdcage play NNN', { type: 'WATCHING' });
 });
 
 // let bot talk through console
@@ -52,11 +53,11 @@ client.on('message', message => {
             for (var a = 0; a < ni.length; a++) {
                 if(message.content.includes(ni[a])){
                     // Data which will need to add in a file.
-                    fsLibrary.readFile('./things/1.txt', (error, txtString) => {
+                    fsLibrary.readFile('./things/shou-yi.txt', (error, txtString) => {
                         if (error) throw err;
                         let a = parseInt(txtString) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/1.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/shou-yi.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -66,11 +67,11 @@ client.on('message', message => {
             for (var A = 0; A < nig.length; A++) {
                 if(message.content === (nig[A])){
                     // Data which will need to add in a file.
-                    fsLibrary.readFile('./things/1.txt', (error, aaa) => {
+                    fsLibrary.readFile('./things/shou-yi.txt', (error, aaa) => {
                         if (error) throw err;
                         let a = parseInt(aaa) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/1.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/shou-yi.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -84,11 +85,11 @@ client.on('message', message => {
             for (var b = 0; b < ni.length; b++) {
                 if(message.content.includes(ni[b])){
                     // Data which will need to add in a file.
-                    fsLibrary.readFile('./things/2.txt', (error, aab) => {
+                    fsLibrary.readFile('./things/michael.txt', (error, aab) => {
                         if (error) throw err;
                         let a = parseInt(aab) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/2.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/michael.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -98,11 +99,11 @@ client.on('message', message => {
             for (var B = 0; B < nig.length; B++) {
                 if(message.content === (nig[B])){
                     // Data which will need to add in a file.
-                    fsLibrary.readFile('./things/2.txt', (error, aac) => {
+                    fsLibrary.readFile('./things/michael.txt', (error, aac) => {
                         if (error) throw err;
                         let a = parseInt(aac) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/2.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/michael.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -116,11 +117,11 @@ client.on('message', message => {
             for (var c = 0; c < ni.length; c++) {
                 if(message.content.includes(ni[c])){
                     // Data which will need to add in c file.
-                    fsLibrary.readFile('./things/3.txt', (error, aad) => {
+                    fsLibrary.readFile('./things/mark.txt', (error, aad) => {
                         if (error) throw err;
                         let a = parseInt(aad) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/3.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/mark.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -130,11 +131,11 @@ client.on('message', message => {
             for (var C = 0; C < nig.length; C++) {
                 if(message.content === (nig[C])){
                     // Data which will need to add in C file.
-                    fsLibrary.readFile('./things/3.txt', (error, aae) => {
+                    fsLibrary.readFile('./things/mark.txt', (error, aae) => {
                         if (error) throw err;
                         let a = parseInt(aae) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/3.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/mark.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -148,11 +149,11 @@ client.on('message', message => {
             for (var d = 0; d < ni.length; d++) {
                 if(message.content.includes(ni[d])){
                     // Data which will need to add in c file.
-                    fsLibrary.readFile('./things/4.txt', (error, aaf) => {
+                    fsLibrary.readFile('./things/heyheyheychoc.txt', (error, aaf) => {
                         if (error) throw err;
                         let c = parseInt(aaf) + 1
                         let data = c.toString()
-                        fsLibrary.writeFile('./things/4.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/heyheyheychoc.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -162,11 +163,11 @@ client.on('message', message => {
             for (var D = 0; D < nig.length; D++) {
                 if(message.content === (nig[D])){
                     // Data which will need to add in c file.
-                    fsLibrary.readFile('./things/4.txt', (error, aag) => {
+                    fsLibrary.readFile('./things/heyheyheychoc.txt', (error, aag) => {
                         if (error) throw err;
                         let c = parseInt(aag) + 1
                         let data = c.toString()
-                        fsLibrary.writeFile('./things/4.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/heyheyheychoc.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -180,11 +181,11 @@ client.on('message', message => {
             for (var e = 0; e < ni.length; e++) {
                 if(message.content.includes(ni[e])){
                     // Data which will need to add in a file.
-                    fsLibrary.readFile('./things/5.txt', (error, aah) => {
+                    fsLibrary.readFile('./things/niv.txt', (error, aah) => {
                         if (error) throw err;
                         let a = parseInt(aah) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/5.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/niv.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -194,11 +195,11 @@ client.on('message', message => {
             for (var E = 0; E < nig.length; E++) {
                 if(message.content === (nig[E])){
                     // Data which will need to add in a file.
-                    fsLibrary.readFile('./things/5.txt', (error, aai) => {
+                    fsLibrary.readFile('./things/niv.txt', (error, aai) => {
                         if (error) throw err;
                         let a = parseInt(aai) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/5.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/niv.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -212,11 +213,11 @@ client.on('message', message => {
             for (var f = 0; f < ni.length; f++) {
                 if(message.content.includes(ni[f])){
                     // Data which will need to add in f file.
-                    fsLibrary.readFile('./things/6.txt', (error, aaj) => {
+                    fsLibrary.readFile('./things/gangsteve.txt', (error, aaj) => {
                         if (error) throw err;
                         let a = parseInt(aaj) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/6.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/gangsteve.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -226,11 +227,11 @@ client.on('message', message => {
             for (var F = 0; F < nig.length; F++) {
                 if(message.content === (nig[F])){
                     // Data which will need to add in F file.
-                    fsLibrary.readFile('./things/6.txt', (error, aak) => {
+                    fsLibrary.readFile('./things/gangsteve.txt', (error, aak) => {
                         if (error) throw err;
                         let a = parseInt(aak) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/6.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/gangsteve.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -244,11 +245,11 @@ client.on('message', message => {
             for (var g = 0; g < ni.length; g++) {
                 if(message.content.includes(ni[g])){
                     // Data which will need to add in f file.
-                    fsLibrary.readFile('./things/7.txt', (error, aal) => {
+                    fsLibrary.readFile('./things/goose.txt', (error, aal) => {
                         if (error) throw err;
                         let a = parseInt(aal) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/7.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/goose.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -258,11 +259,11 @@ client.on('message', message => {
             for (var G = 0; G < nig.length; G++) {
                 if(message.content === (nig[G])){
                     // Data which will need to add in f file.
-                    fsLibrary.readFile('./things/7.txt', (error, aam) => {
+                    fsLibrary.readFile('./things/goose.txt', (error, aam) => {
                         if (error) throw err;
                         let a = parseInt(aam) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/7.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/goose.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -276,11 +277,11 @@ client.on('message', message => {
             for (var h = 0; h < ni.length; h++) {
                 if(message.content.includes(ni[h])){
                     // Data which will need to add in a file.
-                    fsLibrary.readFile('./things/8.txt', (error, aan) => {
+                    fsLibrary.readFile('./things/syed.txt', (error, aan) => {
                         if (error) throw err;
                         let a = parseInt(aan) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/8.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/syed.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -290,11 +291,11 @@ client.on('message', message => {
             for (var H = 0; H < nig.length; H++) {
                 if(message.content === (nig[H])){
                     // Data which will need to add in a file.
-                    fsLibrary.readFile('./things/8.txt', (error, aao) => {
+                    fsLibrary.readFile('./things/syed.txt', (error, aao) => {
                         if (error) throw err;
                         let a = parseInt(aao) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/8.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/syed.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -308,11 +309,11 @@ client.on('message', message => {
             for (var i = 0; i < ni.length; i++) {
                 if(message.content.includes(ni[i])){
                     // Data which will need to add in i file.
-                    fsLibrary.readFile('./things/9.txt', (error, aap) => {
+                    fsLibrary.readFile('./things/kingo.txt', (error, aap) => {
                         if (error) throw err;
                         let a = parseInt(aap) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/9.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/kingo.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -322,11 +323,11 @@ client.on('message', message => {
             for (var I = 0; I < nig.length; I++) {
                 if(message.content === (nig[I])){
                     // Data which will need to add in I file.
-                    fsLibrary.readFile('./things/9.txt', (error, aaq) => {
+                    fsLibrary.readFile('./things/kingo.txt', (error, aaq) => {
                         if (error) throw err;
                         let a = parseInt(aaq) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/9.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/kingo.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -340,11 +341,11 @@ client.on('message', message => {
             for (var j = 0; j < ni.length; j++) {
                 if(message.content.includes(ni[j])){
                     // Data which will need to add in i file.
-                    fsLibrary.readFile('./things/10.txt', (error, aar) => {
+                    fsLibrary.readFile('./things/carrot.txt', (error, aar) => {
                         if (error) throw err;
                         let i = parseInt(aar) + 1
                         let data = i.toString()
-                        fsLibrary.writeFile('./things/10.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/carrot.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -354,11 +355,11 @@ client.on('message', message => {
             for (var J = 0; J < nig.length; J++) {
                 if(message.content === (nig[J])){
                     // Data which will need to add in i file.
-                    fsLibrary.readFile('./things/10.txt', (error, aas) => {
+                    fsLibrary.readFile('./things/carrot.txt', (error, aas) => {
                         if (error) throw err;
                         let i = parseInt(aas) + 1
                         let data = i.toString()
-                        fsLibrary.writeFile('./things/10.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/carrot.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -372,11 +373,11 @@ client.on('message', message => {
             for (var k = 0; k < ni.length; k++) {
                 if(message.content.includes(ni[k])){
                     // Data which will need to add in a file.
-                    fsLibrary.readFile('./things/11.txt', (error, aat) => {
+                    fsLibrary.readFile('./things/caio.txt', (error, aat) => {
                         if (error) throw err;
                         let a = parseInt(aat) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/11.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/caio.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -386,11 +387,11 @@ client.on('message', message => {
             for (var K = 0; K < nig.length; K++) {
                 if(message.content === (nig[K])){
                     // Data which will need to add in a file.
-                    fsLibrary.readFile('./things/11.txt', (error, aau) => {
+                    fsLibrary.readFile('./things/caio.txt', (error, aau) => {
                         if (error) throw err;
                         let a = parseInt(aau) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/11.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/caio.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -404,11 +405,11 @@ client.on('message', message => {
             for (var l = 0; l < ni.length; l++) {
                 if(message.content.includes(ni[l])){
                     // Data which will need to add in l file.
-                    fsLibrary.readFile('./things/12.txt', (error, aav) => {
+                    fsLibrary.readFile('./things/nikith.txt', (error, aav) => {
                         if (error) throw err;
                         let a = parseInt(aav) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/12.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/nikith.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -418,11 +419,11 @@ client.on('message', message => {
             for (var L = 0; L < nig.length; L++) {
                 if(message.content === (nig[L])){
                     // Data which will need to add in L file.
-                    fsLibrary.readFile('./things/12.txt', (error, aaw) => {
+                    fsLibrary.readFile('./things/nikith.txt', (error, aaw) => {
                         if (error) throw err;
                         let a = parseInt(aaw) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/12.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/nikith.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -436,11 +437,11 @@ client.on('message', message => {
             for (var m = 0; m < ni.length; m++) {
                 if(message.content.includes(ni[m])){
                     // Data which will need to add in l file.
-                    fsLibrary.readFile('./things/13.txt', (error, aax) => {
+                    fsLibrary.readFile('./things/ramsey.txt', (error, aax) => {
                         if (error) throw err;
                         let a = parseInt(aax) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/13.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/ramsey.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -450,11 +451,11 @@ client.on('message', message => {
             for (var M = 0; M < nig.length; M++) {
                 if(message.content === (nig[M])){
                     // Data which will need to add in l file.
-                    fsLibrary.readFile('./things/13.txt', (error, aay) => {
+                    fsLibrary.readFile('./things/ramsey.txt', (error, aay) => {
                         if (error) throw err;
                         let a = parseInt(aay) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/13.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/ramsey.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -468,11 +469,11 @@ client.on('message', message => {
             for (var n = 0; n < ni.length; n++) {
                 if(message.content.includes(ni[n])){
                     // Data which will need to add in a file.
-                    fsLibrary.readFile('./things/14.txt', (error, aaz) => {
+                    fsLibrary.readFile('./things/gangstevealt.txt', (error, aaz) => {
                         if (error) throw err;
                         let a = parseInt(aaz) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/14.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/gangstevealt.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -482,11 +483,11 @@ client.on('message', message => {
             for (var N = 0; N < nig.length; N++) {
                 if(message.content === (nig[N])){
                     // Data which will need to add in a file.
-                    fsLibrary.readFile('./things/14.txt', (error, aba) => {
+                    fsLibrary.readFile('./things/gangstevealt.txt', (error, aba) => {
                         if (error) throw err;
                         let a = parseInt(aba) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/14.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/gangstevealt.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -500,11 +501,11 @@ client.on('message', message => {
             for (var o = 0; o < ni.length; o++) {
                 if(message.content.includes(ni[o])){
                     // Data which will need to add in o file.
-                    fsLibrary.readFile('./things/15.txt', (error, abb) => {
+                    fsLibrary.readFile('./things/cooper.txt', (error, abb) => {
                         if (error) throw err;
                         let a = parseInt(abb) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/15.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/cooper.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -514,11 +515,11 @@ client.on('message', message => {
             for (var O = 0; O < nig.length; O++) {
                 if(message.content === (nig[O])){
                     // Data which will need to add in O file.
-                    fsLibrary.readFile('./things/15.txt', (error, abc) => {
+                    fsLibrary.readFile('./things/cooper.txt', (error, abc) => {
                         if (error) throw err;
                         let a = parseInt(abc) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/15.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/cooper.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -532,11 +533,11 @@ client.on('message', message => {
             for (var p = 0; p < ni.length; p++) {
                 if(message.content.includes(ni[p])){
                     // Data which will need to add in o file.
-                    fsLibrary.readFile('./things/16.txt', (error, abd) => {
+                    fsLibrary.readFile('./things/kalmar.txt', (error, abd) => {
                         if (error) throw err;
                         let o = parseInt(abd) + 1
                         let data = o.toString()
-                        fsLibrary.writeFile('./things/16.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/kalmar.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -546,11 +547,11 @@ client.on('message', message => {
             for (var P = 0; P < nig.length; P++) {
                 if(message.content === (nig[P])){
                     // Data which will need to add in o file.
-                    fsLibrary.readFile('./things/16.txt', (error, abe) => {
+                    fsLibrary.readFile('./things/kalmar.txt', (error, abe) => {
                         if (error) throw err;
                         let o = parseInt(abe) + 1
                         let data = o.toString()
-                        fsLibrary.writeFile('./things/16.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/kalmar.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -564,11 +565,11 @@ client.on('message', message => {
             for (var q = 0; q < ni.length; q++) {
                 if(message.content.includes(ni[q])){
                     // Data which will need to add in a file.
-                    fsLibrary.readFile('./things/17.txt', (error, abf) => {
+                    fsLibrary.readFile('./things/caioalt.txt', (error, abf) => {
                         if (error) throw err;
                         let a = parseInt(abf) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/17.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/caioalt.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -578,11 +579,11 @@ client.on('message', message => {
             for (var Q = 0; Q < nig.length; Q++) {
                 if(message.content === (nig[Q])){
                     // Data which will need to add in a file.
-                    fsLibrary.readFile('./things/17.txt', (error, abg) => {
+                    fsLibrary.readFile('./things/caioalt.txt', (error, abg) => {
                         if (error) throw err;
                         let a = parseInt(abg) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/17.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/caioalt.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -596,11 +597,11 @@ client.on('message', message => {
             for (var r = 0; r < ni.length; r++) {
                 if(message.content.includes(ni[r])){
                     // Data which will need to add in r file.
-                    fsLibrary.readFile('./things/18.txt', (error, abh) => {
+                    fsLibrary.readFile('./things/kalmaralt.txt', (error, abh) => {
                         if (error) throw err;
                         let a = parseInt(abh) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/18.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/kalmaralt.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -610,11 +611,11 @@ client.on('message', message => {
             for (var R = 0; R < nig.length; R++) {
                 if(message.content === (nig[R])){
                     // Data which will need to add in R file.
-                    fsLibrary.readFile('./things/18.txt', (error, abi) => {
+                    fsLibrary.readFile('./things/kalmaralt.txt', (error, abi) => {
                         if (error) throw err;
                         let a = parseInt(abi) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/18.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/kalmaralt.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -628,11 +629,11 @@ client.on('message', message => {
             for (var s = 0; s < ni.length; s++) {
                 if(message.content.includes(ni[s])){
                     // Data which will need to add in r file.
-                    fsLibrary.readFile('./things/19.txt', (error, abj) => {
+                    fsLibrary.readFile('./things/nikita.txt', (error, abj) => {
                         if (error) throw err;
                         let a = parseInt(abj) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/19.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/nikita.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -642,11 +643,11 @@ client.on('message', message => {
             for (var S = 0; S < nig.length; S++) {
                 if(message.content === (nig[S])){
                     // Data which will need to add in r file.
-                    fsLibrary.readFile('./things/19.txt', (error, abk) => {
+                    fsLibrary.readFile('./things/nikita.txt', (error, abk) => {
                         if (error) throw err;
                         let a = parseInt(abk) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/19.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/nikita.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -660,11 +661,11 @@ client.on('message', message => {
             for (var t = 0; t < ni.length; t++) {
                 if(message.content.includes(ni[t])){
                     // Data which will need to add in a file.
-                    fsLibrary.readFile('./things/20.txt', (error, abl) => {
+                    fsLibrary.readFile('./things/fleeton.txt', (error, abl) => {
                         if (error) throw err;
                         let a = parseInt(abl) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/20.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/fleeton.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -674,11 +675,11 @@ client.on('message', message => {
             for (var T = 0; T < nig.length; T++) {
                 if(message.content === (nig[T])){
                     // Data which will need to add in a file.
-                    fsLibrary.readFile('./things/20.txt', (error, abm) => {
+                    fsLibrary.readFile('./things/fleeton.txt', (error, abm) => {
                         if (error) throw err;
                         let a = parseInt(abm) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/20.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/fleeton.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -692,11 +693,11 @@ client.on('message', message => {
             for (var u = 0; u < ni.length; u++) {
                 if(message.content.includes(ni[u])){
                     // Data which will need to add in u file.
-                    fsLibrary.readFile('./things/21.txt', (error, abn) => {
+                    fsLibrary.readFile('./things/emre.txt', (error, abn) => {
                         if (error) throw err;
                         let a = parseInt(abn) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/21.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/emre.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -706,11 +707,11 @@ client.on('message', message => {
             for (var U = 0; U < nig.length; U++) {
                 if(message.content === (nig[U])){
                     // Data which will need to add in U file.
-                    fsLibrary.readFile('./things/21.txt', (error, abo) => {
+                    fsLibrary.readFile('./things/emre.txt', (error, abo) => {
                         if (error) throw err;
                         let a = parseInt(abo) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/21.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/emre.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -724,11 +725,11 @@ client.on('message', message => {
             for (var v = 0; v < ni.length; v++) {
                 if(message.content.includes(ni[v])){
                     // Data which will need to add in u file.
-                    fsLibrary.readFile('./things/22.txt', (error, abp) => {
+                    fsLibrary.readFile('./things/david.txt', (error, abp) => {
                         if (error) throw err;
                         let u = parseInt(abp) + 1
                         let data = u.toString()
-                        fsLibrary.writeFile('./things/22.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/david.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -738,11 +739,11 @@ client.on('message', message => {
             for (var V = 0; V < nig.length; V++) {
                 if(message.content === (nig[V])){
                     // Data which will need to add in u file.
-                    fsLibrary.readFile('./things/22.txt', (error, abq) => {
+                    fsLibrary.readFile('./things/david.txt', (error, abq) => {
                         if (error) throw err;
                         let u = parseInt(abq) + 1
                         let data = u.toString()
-                        fsLibrary.writeFile('./things/22.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/david.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -756,11 +757,11 @@ client.on('message', message => {
             for (var w = 0; w < ni.length; w++) {
                 if(message.content.includes(ni[w])){
                     // Data which will need to add in a file.
-                    fsLibrary.readFile('./things/23.txt', (error, abr) => {
+                    fsLibrary.readFile('./things/zena.txt', (error, abr) => {
                         if (error) throw err;
                         let a = parseInt(abr) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/23.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/zena.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -770,11 +771,11 @@ client.on('message', message => {
             for (var W = 0; W < nig.length; W++) {
                 if(message.content === (nig[W])){
                     // Data which will need to add in a file.
-                    fsLibrary.readFile('./things/23.txt', (error, abs) => {
+                    fsLibrary.readFile('./things/zena.txt', (error, abs) => {
                         if (error) throw err;
                         let a = parseInt(abs) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/23.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/zena.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -788,11 +789,11 @@ client.on('message', message => {
             for (var x = 0; x < ni.length; x++) {
                 if(message.content.includes(ni[x])){
                     // Data which will need to add in x file.
-                    fsLibrary.readFile('./things/24.txt', (error, abt) => {
+                    fsLibrary.readFile('./things/mahin.txt', (error, abt) => {
                         if (error) throw err;
                         let a = parseInt(abt) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/24.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/mahin.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -802,11 +803,11 @@ client.on('message', message => {
             for (var X = 0; X < nig.length; X++) {
                 if(message.content === (nig[X])){
                     // Data which will need to add in X file.
-                    fsLibrary.readFile('./things/24.txt', (error, abu) => {
+                    fsLibrary.readFile('./things/mahin.txt', (error, abu) => {
                         if (error) throw err;
                         let a = parseInt(abu) + 1
                         let data = a.toString()
-                        fsLibrary.writeFile('./things/24.txt', data, (error) => {
+                        fsLibrary.writeFile('./things/mahin.txt', data, (error) => {
                             if (error) throw err;
                         })
                     })
@@ -815,15 +816,15 @@ client.on('message', message => {
             }
         }
                 // for each individual user, x different file
-    if(message.author == ('1005009857339981895')){             //mathisyum#3026 (carrot alt)
+    if(message.author == ('1005009857339981895')){             //carrotalt (carrot alt)
         for (var y = 0; y < ni.length; y++) {
             if(message.content.includes(ni[y])){
                 // Data which will need to add in x file.
-                fsLibrary.readFile('./things/25.txt', (error, abv) => {
+                fsLibrary.readFile('./things/carrotalt.txt', (error, abv) => {
                     if (error) throw err;
                     let a = parseInt(abv) + 1
                     let data = a.toString()
-                    fsLibrary.writeFile('./things/25.txt', data, (error) => {
+                    fsLibrary.writeFile('./things/carrotalt.txt', data, (error) => {
                         if (error) throw err;
                     })
                 })
@@ -833,11 +834,11 @@ client.on('message', message => {
         for (var Y = 0; Y < nig.length; Y++) {
             if(message.content === (nig[Y])){
                 // Data which will need to add in x file.
-                fsLibrary.readFile('./things/25.txt', (error, abw) => {
+                fsLibrary.readFile('./things/carrotalt.txt', (error, abw) => {
                     if (error) throw err;
                     let a = parseInt(abw) + 1
                     let data = a.toString()
-                    fsLibrary.writeFile('./things/25.txt', data, (error) => {
+                    fsLibrary.writeFile('./things/carrotalt.txt', data, (error) => {
                         if (error) throw err;
                     })
                 })
@@ -856,38 +857,51 @@ client.on('message', message => {
     if(!message.content.startsWith(prefix) || message.author.bot) return;
 
 
-    // if(message.author == ('626688631309991937')){  
-    //     if(message.content.includes('!add')){
-    //         let split_message = message.content.split(' ')
-    //         console.log(split_message[0]);
-    //         console.log(split_message[1]);
-    //         fsLibrary.readFile('./things/1.txt', (error, acx) => {
-    //             if (error) throw err;
-    //             let a = parseInt(acx) + parseInt(split_message[1])
-    //             let data = a.toString()
-    //             fsLibrary.writeFile('./things/1.txt', data, (error) => {
-    //                 if (error) throw err;
-    //             })
-    //             message.channel.send('updated?')
-    //         })
-    //     }
-    // }
-
     if(message.author == ('626688631309991937')){  
         if(message.content.includes('!add')){
             let split_message = message.content.split(' ')
-            console.log(split_message[0]);
-            console.log(split_message[1]);
-            console.log(split_message[2]);
-            fsLibrary.readFile('./things/' + split_message[1] + '.txt', (error, acx) => {
-                if (error) throw err;
-                let a = parseInt(acx) + parseInt(split_message[2])
-                let data = a.toString()
-                fsLibrary.writeFile('./things/' + split_message[1] + '.txt', data, (error) => {
+            console.log(split_message.slice(2));
+            if(split_message.length > 3 || split_message.length <= 1){
+                message.channel.send('format: !add {user\'s name} {amount}')
+                // break;
+            } else {
+                console.log(split_message[0]);
+                console.log(split_message[1]);
+                console.log(split_message[2]);
+                fsLibrary.readFile('./things/' + split_message[1] + '.txt', (error, acx) => {
                     if (error) throw err;
+                    let a = parseInt(acx) + parseInt(split_message[2])
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/' + split_message[1] + '.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                    message.channel.send('updated?')
                 })
-                message.channel.send('updated?')
-            })
+            }
+        }
+    }
+
+    if(message.author == ('626688631309991937')){  
+        if(message.content.includes('!subtract')){
+            let split_message = message.content.split(' ')
+            console.log(split_message.slice(2));
+            if(split_message.length > 3 || split_message.length <= 1){
+                message.channel.send('format: !subtract {user\'s name} {amount}')
+                // break;
+            } else {
+                console.log(split_message[0]);
+                console.log(split_message[1]);
+                console.log(split_message[2]);
+                fsLibrary.readFile('./things/' + split_message[1] + '.txt', (error, acx) => {
+                    if (error) throw err;
+                    let a = parseInt(acx) - parseInt(split_message[2])
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/' + split_message[1] + '.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                    message.channel.send('updated?')
+                })
+            }
         }
     }
 
@@ -907,152 +921,152 @@ client.on('message', message =>{
 
 
     if(command === 'shou-yi'){
-        fsLibrary.readFile('./things/1.txt', (error, abx) => {
+        fsLibrary.readFile('./things/shou-yi.txt', (error, abx) => {
             if (error) throw err;
             message.channel.send('Shou-Yi - ' + abx.toString());
         })
     }
     if(command === 'michael'){
-        fsLibrary.readFile('./things/2.txt', (error, aby) => {
+        fsLibrary.readFile('./things/michael.txt', (error, aby) => {
             if (error) throw err;
             message.channel.send('Michael - ' + aby.toString());
         })
     }
     if(command === 'mark'){
-        fsLibrary.readFile('./things/3.txt', (error, abz) => {
+        fsLibrary.readFile('./things/mark.txt', (error, abz) => {
             if (error) throw err;
             message.channel.send('Mark - ' + abz.toString());
         })
     }
     if(command === 'heyheyheychoc'){
-        fsLibrary.readFile('./things/4.txt', (error, aca) => {
+        fsLibrary.readFile('./things/heyheyheychoc.txt', (error, aca) => {
             if (error) throw err;
             message.channel.send('Alex I - ' + aca.toString());
         })
     }
     if(command === 'niv'){
-        fsLibrary.readFile('./things/5.txt', (error, acb) => {
+        fsLibrary.readFile('./things/niv.txt', (error, acb) => {
             if (error) throw err;
             message.channel.send('Nivriti - ' + acb.toString());
         })
     }
     if(command === 'gangsteve'){
-        fsLibrary.readFile('./things/6.txt', (error, acc) => {
+        fsLibrary.readFile('./things/gangsteve.txt', (error, acc) => {
             if (error) throw err;
             message.channel.send('Sam W - ' + acc.toString());
         })
     }
     if(command === 'goose'){
-        fsLibrary.readFile('./things/7.txt', (error, acd) => {
+        fsLibrary.readFile('./things/goose.txt', (error, acd) => {
             if (error) throw err;
             message.channel.send('Ghassan - ' + acd.toString());
         })
 
     }
     if(command === 'syed'){
-        fsLibrary.readFile('./things/8.txt', (error, ace) => {
+        fsLibrary.readFile('./things/syed.txt', (error, ace) => {
             if (error) throw err;
             message.channel.send('Syed - ' + ace.toString());
         })
     }
     if(command === 'kingo'){
-        fsLibrary.readFile('./things/9.txt', (error, acf) => {
+        fsLibrary.readFile('./things/kingo.txt', (error, acf) => {
             if (error) throw err;
             message.channel.send('Kingo - ' + acf.toString());
         })
     }
     if(command === 'carrot'){
-        fsLibrary.readFile('./things/10.txt', (error, acg) => {
+        fsLibrary.readFile('./things/carrot.txt', (error, acg) => {
             if (error) throw err;
             message.channel.send('Caroline - ' + acg.toString());
         })
     }
     if(command === 'caio'){
-        fsLibrary.readFile('./things/11.txt', (error, ach) => {
+        fsLibrary.readFile('./things/caio.txt', (error, ach) => {
             if (error) throw err;
             message.channel.send('Caio - ' + ach.toString());
         })
     }
     if(command === 'nikith'){
-        fsLibrary.readFile('./things/12.txt', (error, aci) => {
+        fsLibrary.readFile('./things/nikith.txt', (error, aci) => {
             if (error) throw err;
             message.channel.send('Nikith - ' + aci.toString());
         })
     }
     if(command === 'ramsey'){
-        fsLibrary.readFile('./things/13.txt', (error, acj) => {
+        fsLibrary.readFile('./things/ramsey.txt', (error, acj) => {
             if (error) throw err;
             message.channel.send('Ramsey - ' + acj.toString());
         })
     }
     if(command === 'gangstevealt'){
-        fsLibrary.readFile('./things/14.txt', (error, ack) => {
+        fsLibrary.readFile('./things/gangstevealt.txt', (error, ack) => {
             if (error) throw err;
             message.channel.send('Sam W Alt - ' + ack.toString());
         })
     }
     if(command === 'cooper'){
-        fsLibrary.readFile('./things/15.txt', (error, acl) => {
+        fsLibrary.readFile('./things/cooper.txt', (error, acl) => {
             if (error) throw err;
             message.channel.send('Cooper - ' + acl.toString());
         })
     }
     if(command === 'kalmar'){
-        fsLibrary.readFile('./things/16.txt', (error, acm) => {
+        fsLibrary.readFile('./things/kalmar.txt', (error, acm) => {
             if (error) throw err;
             message.channel.send('Alex K - ' + acm.toString());
         })
     }
     if(command === 'caioalt'){
-        fsLibrary.readFile('./things/17.txt', (error, acn) => {
+        fsLibrary.readFile('./things/caioalt.txt', (error, acn) => {
             if (error) throw err;
             message.channel.send('Caio Alt - ' + acn.toString());
         })
     }
     if(command === 'kalmaralt'){
-        fsLibrary.readFile('./things/18.txt', (error, aco) => {
+        fsLibrary.readFile('./things/kalmaralt.txt', (error, aco) => {
             if (error) throw err;
             message.channel.send('Alex K Alt - ' + aco.toString());
         })
     }
     if(command === 'nikita'){
-        fsLibrary.readFile('./things/19.txt', (error, acp) => {
+        fsLibrary.readFile('./things/nikita.txt', (error, acp) => {
             if (error) throw err;
             message.channel.send('Nikita - ' + acp.toString());
         })
     }
     if(command === 'fleeton'){
-        fsLibrary.readFile('./things/20.txt', (error, acq) => {
+        fsLibrary.readFile('./things/fleeton.txt', (error, acq) => {
             if (error) throw err;
             message.channel.send('Nicholas - ' + acq.toString());
         })
     }
     if(command === 'emre'){
-        fsLibrary.readFile('./things/21.txt', (error, acr) => {
+        fsLibrary.readFile('./things/emre.txt', (error, acr) => {
             if (error) throw err;
             message.channel.send('Emre - ' + acr.toString());
         })
     }
     if(command === 'david'){
-        fsLibrary.readFile('./things/22.txt', (error, acs) => {
+        fsLibrary.readFile('./things/david.txt', (error, acs) => {
             if (error) throw err;
             message.channel.send('David - ' + acs.toString());
         })
     }
     if(command === 'zena'){
-        fsLibrary.readFile('./things/23.txt', (error, act) => {
+        fsLibrary.readFile('./things/zena.txt', (error, act) => {
             if (error) throw err;
             message.channel.send('Zena - ' + act.toString());
         })
     }
     if(command === 'mahin'){
-        fsLibrary.readFile('./things/24.txt', (error, acu) => {
+        fsLibrary.readFile('./things/mahin.txt', (error, acu) => {
             if (error) throw err;
             message.channel.send('Mahin - ' + acu.toString());
         })
     }
-    if(command === 'mathisyum#3026'){
-        fsLibrary.readFile('./things/25.txt', (error, acv) => {
+    if(command === 'carrotalt'){
+        fsLibrary.readFile('./things/carrotalt.txt', (error, acv) => {
             if (error) throw err;
             message.channel.send('Caroline Alt - ' + acv.toString());
         })
@@ -1788,4 +1802,4 @@ client.on('message', message =>{
 //     }
 // })
 
-client.login('OTQ3MDk2OTc3MDYwMDEyMDYy.YhoSyw.8U1Grib0pi7XnJjvoPqaODmYEmc');
+client.login('OTQ3MDk2OTc3MDYwMDEyMDYy.GQohH-.HI8PCs9RkOLCjLX2G1P8y_yN32fanBvFvlwTwA');
