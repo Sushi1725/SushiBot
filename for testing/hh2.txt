@@ -1,0 +1,831 @@
+        // for each individual user, a different file
+    if(message.author == ('517789769162555422')){
+        for (var aa = 0; aa < ni.length; aa++) {
+            if(message.content.includes(ni[aa])){
+                // Data which will need to add in a file.
+                fsLibrary.readFile('./things/27.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/27.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+        for (var AA = 0; AA < nig.length; AA++) {
+            if(message.content === (nig[AA])){
+                // Data which will need to add in a file.
+                fsLibrary.readFile('./things/27.txt', (error, txtString) => {
+                    if (error) throw err;
+                    // let a = parseInt(txtString) + 1
+                    // let data = a.toString()
+                    fsLibrary.writeFile('./things/27.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+    }
+
+            // for each individual user, a different file
+    if(message.author == ('517789769162555422')){
+        for (var bb = 0; bb < ni.length; bb++) {
+            if(message.content.includes(ni[bb])){
+                // Data which will need to add in a file.
+                fsLibrary.readFile('./things/28.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/28.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+        for (var BB = 0; BB < nig.length; BB++) {
+            if(message.content === (nig[BB])){
+                // Data which will need to add in a file.
+                fsLibrary.readFile('./things/28.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/28.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+    }
+
+        // for each individual user, cc different file
+    if(message.author == ('517789769162555422')){
+        for (var cc = 0; cc < ni.length; cc++) {
+            if(message.content.includes(ni[cc])){
+                // Data which will need to add in cc file.
+                fsLibrary.readFile('./things/29.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/29.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+        for (var CC = 0; CC < nig.length; CC++) {
+            if(message.content === (nig[CC])){
+                // Data which will need to add in CC file.
+                fsLibrary.readFile('./things/29.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/29.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+    }
+
+        // for each individual user, cc different file
+    if(message.author == ('517789769162555422')){
+        for (var dd = 0; dd < ni.length; dd++) {
+            if(message.content.includes(ni[dd])){
+                // Data which will need to add in cc file.
+                fsLibrary.readFile('./things/30.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let cc = parseInt(txtString) + 1
+                    let data = cc.toString()
+                    fsLibrary.writeFile('./things/30.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+        for (var DD = 0; DD < nig.length; DD++) {
+            if(message.content === (nig[DD])){
+                // Data which will need to add in cc file.
+                fsLibrary.readFile('./things/30.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let cc = parseInt(txtString) + 1
+                    let data = cc.toString()
+                    fsLibrary.writeFile('./things/30.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+    }
+
+        // for each individual user, a different file
+    if(message.author == ('517789769162555422')){
+        for (var ee = 0; ee < ni.length; ee++) {
+            if(message.content.includes(ni[ee])){
+                // Data which will need to add in a file.
+                fsLibrary.readFile('./things/31.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/31.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+        for (var EE = 0; EE < nig.length; EE++) {
+            if(message.content === (nig[EE])){
+                // Data which will need to add in a file.
+                fsLibrary.readFile('./things/31.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/31.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+    }
+
+        // for each individual user, ff different file
+    if(message.author == ('517789769162555422')){
+        for (var ff = 0; ff < ni.length; ff++) {
+            if(message.content.includes(ni[ff])){
+                // Data which will need to add in ff file.
+                fsLibrary.readFile('./things/32.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/32.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+        for (var FF = 0; FF < nig.length; FF++) {
+            if(message.content === (nig[FF])){
+                // Data which will need to add in FF file.
+                fsLibrary.readFile('./things/32.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/32.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+    }
+
+        // for each individual user, ff different file
+    if(message.author == ('517789769162555422')){
+        for (var gg = 0; gg < ni.length; gg++) {
+            if(message.content.includes(ni[gg])){
+                // Data which will need to add in ff file.
+                fsLibrary.readFile('./things/33.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/33.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+        for (var GG = 0; GG < nig.length; GG++) {
+            if(message.content === (nig[GG])){
+                // Data which will need to add in ff file.
+                fsLibrary.readFile('./things/33.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/33.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+    }
+
+        // for each individual user, a different file
+    if(message.author == ('517789769162555422')){
+        for (var hh = 0; hh < ni.length; hh++) {
+            if(message.content.includes(ni[hh])){
+                // Data which will need to add in a file.
+                fsLibrary.readFile('./things/34.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/34.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+        for (var HH = 0; HH < nig.length; HH++) {
+            if(message.content === (nig[HH])){
+                // Data which will need to add in a file.
+                fsLibrary.readFile('./things/34.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/34.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+    }
+
+        // for each individual user, ii different file
+    if(message.author == ('517789769162555422')){
+        for (var ii = 0; ii < ni.length; ii++) {
+            if(message.content.includes(ni[ii])){
+                // Data which will need to add in ii file.
+                fsLibrary.readFile('./things/35.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/35.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+        for (var II = 0; II < nig.length; II++) {
+            if(message.content === (nig[II])){
+                // Data which will need to add in II file.
+                fsLibrary.readFile('./things/35.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/35.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+    }
+
+        // for each individual user, ii different file
+    if(message.author == ('517789769162555422')){
+        for (var jj = 0; jj < ni.length; jj++) {
+            if(message.content.includes(ni[jj])){
+                // Data which will need to add in ii file.
+                fsLibrary.readFile('./things/36.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let ii = parseInt(txtString) + 1
+                    let data = ii.toString()
+                    fsLibrary.writeFile('./things/36.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+        for (var JJ = 0; JJ < nig.length; JJ++) {
+            if(message.content === (nig[JJ])){
+                // Data which will need to add in ii file.
+                fsLibrary.readFile('./things/36.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let ii = parseInt(txtString) + 1
+                    let data = ii.toString()
+                    fsLibrary.writeFile('./things/36.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+    }
+
+        // for each individual user, a different file
+    if(message.author == ('517789769162555422')){
+        for (var kk = 0; kk < ni.length; kk++) {
+            if(message.content.includes(ni[kk])){
+                // Data which will need to add in a file.
+                fsLibrary.readFile('./things/37.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/37.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+        for (var KK = 0; KK < nig.length; KK++) {
+            if(message.content === (nig[KK])){
+                // Data which will need to add in a file.
+                fsLibrary.readFile('./things/37.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/37.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+    }
+
+        // for each individual user, ll different file
+    if(message.author == ('517789769162555422')){
+        for (var ll = 0; ll < ni.length; ll++) {
+            if(message.content.includes(ni[ll])){
+                // Data which will need to add in ll file.
+                fsLibrary.readFile('./things/38.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/38.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+        for (var LL = 0; LL < nig.length; LL++) {
+            if(message.content === (nig[LL])){
+                // Data which will need to add in LL file.
+                fsLibrary.readFile('./things/38.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/38.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+    }
+
+        // for each individual user, ll different file
+    if(message.author == ('517789769162555422')){
+        for (var mm = 0; mm < ni.length; mm++) {
+            if(message.content.includes(ni[mm])){
+                // Data which will need to add in ll file.
+                fsLibrary.readFile('./things/39.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/39.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+        for (var MM = 0; MM < nig.length; MM++) {
+            if(message.content === (nig[MM])){
+                // Data which will need to add in ll file.
+                fsLibrary.readFile('./things/39.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/39.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+    }
+
+    // for each individual user, a different file
+    if(message.author == ('517789769162555422')){
+        for (var nn = 0; nn < ni.length; nn++) {
+            if(message.content.includes(ni[nn])){
+                // Data which will need to add in a file.
+                fsLibrary.readFile('./things/40.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/40.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+        for (var NN = 0; NN < nig.length; NN++) {
+            if(message.content === (nig[NN])){
+                // Data which will need to add in a file.
+                fsLibrary.readFile('./things/40.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/40.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+    }
+ 
+        // for each individual user, oo different file
+    if(message.author == ('517789769162555422')){
+        for (var oo = 0; oo < ni.length; oo++) {
+            if(message.content.includes(ni[oo])){
+                // Data which will need to add in oo file.
+                fsLibrary.readFile('./things/41.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/41.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+        for (var OO = 0; OO < nig.length; OO++) {
+            if(message.content === (nig[OO])){
+                // Data which will need to add in OO file.
+                fsLibrary.readFile('./things/41.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/41.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+    }
+ 
+        // for each individual user, oo different file
+    if(message.author == ('517789769162555422')){
+        for (var pp = 0; pp < ni.length; pp++) {
+            if(message.content.includes(ni[pp])){
+                // Data which will need to add in oo file.
+                fsLibrary.readFile('./things/42.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let oo = parseInt(txtString) + 1
+                    let data = oo.toString()
+                    fsLibrary.writeFile('./things/42.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+        for (var PP = 0; PP < nig.length; PP++) {
+            if(message.content === (nig[PP])){
+                // Data which will need to add in oo file.
+                fsLibrary.readFile('./things/42.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let oo = parseInt(txtString) + 1
+                    let data = oo.toString()
+                    fsLibrary.writeFile('./things/42.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+    }
+ 
+        // for each individual user, a different file
+    if(message.author == ('517789769162555422')){
+        for (var qq = 0; qq < ni.length; qq++) {
+            if(message.content.includes(ni[qq])){
+                // Data which will need to add in a file.
+                fsLibrary.readFile('./things/43.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/43.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+        for (var QQ = 0; QQ < nig.length; QQ++) {
+            if(message.content === (nig[QQ])){
+                // Data which will need to add in a file.
+                fsLibrary.readFile('./things/43.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/43.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+    }
+ 
+        // for each individual user, rr different file
+    if(message.author == ('517789769162555422')){
+        for (var rr = 0; rr < ni.length; rr++) {
+            if(message.content.includes(ni[rr])){
+                // Data which will need to add in rr file.
+                fsLibrary.readFile('./things/44.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/44.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+        for (var RR = 0; RR < nig.length; RR++) {
+            if(message.content === (nig[RR])){
+                // Data which will need to add in RR file.
+                fsLibrary.readFile('./things/44.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/44.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+    }
+ 
+        // for each individual user, rr different file
+    if(message.author == ('517789769162555422')){
+        for (var ss = 0; ss < ni.length; ss++) {
+            if(message.content.includes(ni[ss])){
+                // Data which will need to add in rr file.
+                fsLibrary.readFile('./things/45.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/45.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+        for (var SS = 0; SS < nig.length; SS++) {
+            if(message.content === (nig[SS])){
+                // Data which will need to add in rr file.
+                fsLibrary.readFile('./things/45.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/45.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+    }
+ 
+        // for each individual user, a different file
+    if(message.author == ('517789769162555422')){
+        for (var tt = 0; tt < ni.length; tt++) {
+            if(message.content.includes(ni[tt])){
+                // Data which will need to add in a file.
+                fsLibrary.readFile('./things/46.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/46.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+        for (var TT = 0; TT < nig.length; TT++) {
+            if(message.content === (nig[TT])){
+                // Data which will need to add in a file.
+                fsLibrary.readFile('./things/46.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/46.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+    }
+ 
+        // for each individual user, uu different file
+    if(message.author == ('517789769162555422')){
+        for (var uu = 0; uu < ni.length; uu++) {
+            if(message.content.includes(ni[uu])){
+                // Data which will need to add in uu file.
+                fsLibrary.readFile('./things/47.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/47.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+        for (var UU = 0; UU < nig.length; UU++) {
+            if(message.content === (nig[UU])){
+                // Data which will need to add in UU file.
+                fsLibrary.readFile('./things/47.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/47.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+    }
+ 
+        // for each individual user, uu different file
+    if(message.author == ('517789769162555422')){
+        for (var vv = 0; vv < ni.length; vv++) {
+            if(message.content.includes(ni[vv])){
+                // Data which will need to add in uu file.
+                fsLibrary.readFile('./things/48.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let uu = parseInt(txtString) + 1
+                    let data = uu.toString()
+                    fsLibrary.writeFile('./things/48.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+        for (var VV = 0; VV < nig.length; VV++) {
+            if(message.content === (nig[VV])){
+                // Data which will need to add in uu file.
+                fsLibrary.readFile('./things/48.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let uu = parseInt(txtString) + 1
+                    let data = uu.toString()
+                    fsLibrary.writeFile('./things/48.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+    }
+ 
+        // for each individual user, a different file
+    if(message.author == ('517789769162555422')){
+        for (var ww = 0; ww < ni.length; ww++) {
+            if(message.content.includes(ni[ww])){
+                // Data which will need to add in a file.
+                fsLibrary.readFile('./things/49.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/49.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+        for (var WW = 0; WW < nig.length; WW++) {
+            if(message.content === (nig[WW])){
+                // Data which will need to add in a file.
+                fsLibrary.readFile('./things/49.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/49.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+    }
+ 
+        // for each individual user, xx different file
+    if(message.author == ('517789769162555422')){
+        for (var xx = 0; xx < ni.length; xx++) {
+            if(message.content.includes(ni[xx])){
+                // Data which will need to add in xx file.
+                fsLibrary.readFile('./things/50.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/50.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+        for (var XX = 0; XX < nig.length; XX++) {
+            if(message.content === (nig[XX])){
+                // Data which will need to add in XX file.
+                fsLibrary.readFile('./things/50.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/50.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+    }
+ 
+        // for each individual user, xx different file
+    if(message.author == ('517789769162555422')){
+        for (var yy = 0; yy < ni.length; yy++) {
+            if(message.content.includes(ni[yy])){
+                // Data which will need to add in xx file.
+                fsLibrary.readFile('./things/51.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/51.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+        for (var YY = 0; YY < nig.length; YY++) {
+            if(message.content === (nig[YY])){
+                // Data which will need to add in xx file.
+                fsLibrary.readFile('./things/51.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/51.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+    }
+ 
+        // for each individual user, xx different file
+    if(message.author == ('517789769162555422')){
+        for (var zz = 0; zz < ni.length; zz++) {
+            if(message.content.includes(ni[zz])){
+                // Data which will need to add in xx file.
+                fsLibrary.readFile('./things/52.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/52.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+        for (var ZZ = 0; ZZ < nig.length; ZZ++) {
+            if(message.content === (nig[ZZ])){
+                // Data which will need to add in xx file.
+                fsLibrary.readFile('./things/52.txt', (error, txtString) => {
+                    if (error) throw err;
+                    let a = parseInt(txtString) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/52.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said  word!! :warning:")
+            }
+        }
+    }

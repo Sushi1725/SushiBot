@@ -16,94 +16,880 @@ client.once('ready', () => {
 let y = process.openStdin()
 y.addListener("data", res => {
     let x = res.toString().trim().split(/ +/g)
-    client.channels.cache.get("1002559209478561864").send(x.join(" "));
+    client.channels.cache.get("1026101854163189790").send(x.join(" "));
 });
 
-client.on('message', msg =>{
-    if (msg.author == client.user)
-    return
-    if (msg.author.bot) return
-    const role = msg.guild.roles.cache.find(role => role.name === 'Emus')
-    const member = client.users.fetch('947096977060012062')
+// client.on('message', msg =>{
+//     if (msg.author == client.user)
+//     return
+//     if (msg.author.bot) return
+//     const role = msg.guild.roles.cache.find(role => role.name === 'Emus')
+//     const member = client.users.fetch('947096977060012062')
     
 
-    if(msg.content.includes('test')){
-        console.log(role)
-        console.log(member)
-        member.roles.add(role)
-        setTimeout(function(){
-            member.roles.remove(role)
-        },2500);
-    }
-});
+//     if(msg.content.includes('test')){
+//         console.log(role)
+//         console.log(member)
+//         member.roles.add(role)
+//         setTimeout(function(){
+//             member.roles.remove(role)
+//         },2500);
+//     }
+// });
+
+
 
 // no nig november funny tings
-const nigga = ["nigg", "Nigg", "nIgg", "NIgg", "niGg", "NiGg", "nIGg", "NIGg", "nigG", "NigG", "nIgG", "NIgG", "niGG", "NiGG", "nIGG", "NIGG", "nigger", "Nigger", "nIgger", "NIgger", "niGger", "NiGger", "nIGger", "NIGger", "nigGer", "NigGer", "nIgGer", "NIgGer", "niGGer", "NiGGer", "nIGGer", "NIGGer", "niggEr", "NiggEr", "nIggEr", "NIggEr", "niGgEr", "NiGgEr", "nIGgEr", "NIGgEr", "nigGEr", "NigGEr", "nIgGEr", "NIgGEr", "niGGEr", "NiGGEr", "nIGGEr", "NIGGEr", "niggeR", "NiggeR", "nIggeR", "NIggeR", "niGgeR", "NiGgeR", "nIGgeR", "NIGgeR", "nigGeR", "NigGeR", "nIgGeR", "NIgGeR", "niGGeR", "NiGGeR", "nIGGeR", "NIGGeR", "niggER", "NiggER", "nIggER", "NIggER", "niGgER", "NiGgER", "nIGgER", "NIGgER", "nigGER", "NigGER", "nIgGER", "NIgGER", "niGGER", "NiGGER", "nIGGER", "NIGGER", "nigga", "Nigga", "nIgga", "NIgga", "niGga", "NiGga", "nIGga", "NIGga", "nigGa", "NigGa", "nIgGa", "NIgGa", "niGGa", "NiGGa", "nIGGa", "NIGGa", "niggA", "NiggA", "nIggA", "NIggA", "niGgA", "NiGgA", "nIGgA", "NIGgA", "nigGA", "NigGA", "nIgGA", "NIgGA", "niGGA", "NiGGA", "nIGGA", "NIGGA"]
-const nig = ["nig ", "Nig ", "nIg ", "NIg ", "niG ", "NiG ", "nIG ", "NIG ", "nig", "Nig", "nIg", "NIg", "niG", "NiG", "nIG", "NIG"]
+const ni = ["nigger", "Nigger", "nIgger", "NIgger", "niGger", "NiGger", "nIGger", "NIGger", "nigGer", "NigGer", "nIgGer", "NIgGer", "niGGer", "NiGGer", "nIGGer", "NIGGer", "niggEr", "NiggEr", "nIggEr", "NIggEr", "niGgEr", "NiGgEr", "nIGgEr", "NIGgEr", "nigGEr", "NigGEr", "nIgGEr", "NIgGEr", "niGGEr", "NiGGEr", "nIGGEr", "NIGGEr", "niggeR", "NiggeR", "nIggeR", "NIggeR", "niGgeR", "NiGgeR", "nIGgeR", "NIGgeR", "nigGeR", "NigGeR", "nIgGeR", "NIgGeR", "niGGeR", "NiGGeR", "nIGGeR", "NIGGeR", "niggER", "NiggER", "nIggER", "NIggER", "niGgER", "NiGgER", "nIGgER", "NIGgER", "nigGER", "NigGER", "nIgGER", "NIgGER", "niGGER", "NiGGER", "nIGGER", "NIGGER", "nigga", "Nigga", "nIgga", "NIgga", "niGga", "NiGga", "nIGga", "NIGga", "nigGa", "NigGa", "nIgGa", "NIgGa", "niGGa", "NiGGa", "nIGGa", "NIGGa", "niggA", "NiggA", "nIggA", "NIggA", "niGgA", "NiGgA", "nIGgA", "NIGgA", "nigGA", "NigGA", "nIgGA", "NIgGA", "niGGA", "NiGGA", "nIGGA", "NIGGA"]
+const nig = ["nigg", "Nigg", "nIgg", "NIgg", "niGg", "NiGg", "nIGg", "NIGg", "nigG", "NigG", "nIgG", "NIgG", "niGG", "NiGG", "nIGG", "NIGG", "nig ", "Nig ", "nIg ", "NIg ", "niG ", "NiG ", "nIG ", "NIG ", "nig", "Nig", "nIg", "NIg", "niG", "NiG", "nIG", "NIG"]
 client.on('message', message => {
     if (message.author == client.user)
         return
     if (message.author.bot) return
 
-    // for each individual user, a different file
-    for (var p = 0; p < nigga.length; p++) {
-        if(message.content.includes(nigga[p])){
-            // Data which will need to add in a file.
-            fsLibrary.readFile('./things/1.txt', (error, txtString) => {
-                if (error) throw err;
-                let a = parseInt(txtString) + 1
-                let data = a.toString()
-                fsLibrary.writeFile('./things/1.txt', data, (error) => {
-                    if (error) throw err;
-                })
-            })
-            message.channel.send(":warning: you said n word!! :warning:")
+        // for each individual user, a different file
+        if(message.author == ('626688631309991937')){           // sushi
+            for (var a = 0; a < ni.length; a++) {
+                if(message.content.includes(ni[a])){
+                    // Data which will need to add in a file.
+                    fsLibrary.readFile('./things/1.txt', (error, txtString) => {
+                        if (error) throw err;
+                        let a = parseInt(txtString) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/1.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+            for (var A = 0; A < nig.length; A++) {
+                if(message.content === (nig[A])){
+                    // Data which will need to add in a file.
+                    fsLibrary.readFile('./things/1.txt', (error, aaa) => {
+                        if (error) throw err;
+                        let a = parseInt(aaa) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/1.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
         }
-    }
-    for (var h = 0; h < nigga.length; h++) {
-        if(message.content === (nig[h])){
-            // Data which will need to add in a file.
-            fsLibrary.readFile('./things/1.txt', (error, txtString) => {
-                if (error) throw err;
-                let a = parseInt(txtString) + 1
-                let data = a.toString()
-                fsLibrary.writeFile('./things/1.txt', data, (error) => {
+    
+                // for each individual user, a different file
+        if(message.author == ('424724370469158922')){     //michael
+            for (var b = 0; b < ni.length; b++) {
+                if(message.content.includes(ni[b])){
+                    // Data which will need to add in a file.
+                    fsLibrary.readFile('./things/2.txt', (error, aab) => {
+                        if (error) throw err;
+                        let a = parseInt(aab) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/2.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+            for (var B = 0; B < nig.length; B++) {
+                if(message.content === (nig[B])){
+                    // Data which will need to add in a file.
+                    fsLibrary.readFile('./things/2.txt', (error, aac) => {
+                        if (error) throw err;
+                        let a = parseInt(aac) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/2.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+        }
+    
+            // for each individual user, c different file
+        if(message.author == ('601225718508290049')){     // mark
+            for (var c = 0; c < ni.length; c++) {
+                if(message.content.includes(ni[c])){
+                    // Data which will need to add in c file.
+                    fsLibrary.readFile('./things/3.txt', (error, aad) => {
+                        if (error) throw err;
+                        let a = parseInt(aad) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/3.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+            for (var C = 0; C < nig.length; C++) {
+                if(message.content === (nig[C])){
+                    // Data which will need to add in C file.
+                    fsLibrary.readFile('./things/3.txt', (error, aae) => {
+                        if (error) throw err;
+                        let a = parseInt(aae) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/3.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+        }
+    
+            // for each individual user, c different file
+        if(message.author == ('636548131936403476')){      // heyheyheychoc
+            for (var d = 0; d < ni.length; d++) {
+                if(message.content.includes(ni[d])){
+                    // Data which will need to add in c file.
+                    fsLibrary.readFile('./things/4.txt', (error, aaf) => {
+                        if (error) throw err;
+                        let c = parseInt(aaf) + 1
+                        let data = c.toString()
+                        fsLibrary.writeFile('./things/4.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+            for (var D = 0; D < nig.length; D++) {
+                if(message.content === (nig[D])){
+                    // Data which will need to add in c file.
+                    fsLibrary.readFile('./things/4.txt', (error, aag) => {
+                        if (error) throw err;
+                        let c = parseInt(aag) + 1
+                        let data = c.toString()
+                        fsLibrary.writeFile('./things/4.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+        }
+    
+            // for each individual user, a different file
+        if(message.author == ('654230200430624798')){       //nivriti
+            for (var e = 0; e < ni.length; e++) {
+                if(message.content.includes(ni[e])){
+                    // Data which will need to add in a file.
+                    fsLibrary.readFile('./things/5.txt', (error, aah) => {
+                        if (error) throw err;
+                        let a = parseInt(aah) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/5.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+            for (var E = 0; E < nig.length; E++) {
+                if(message.content === (nig[E])){
+                    // Data which will need to add in a file.
+                    fsLibrary.readFile('./things/5.txt', (error, aai) => {
+                        if (error) throw err;
+                        let a = parseInt(aai) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/5.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+        }
+    
+            // for each individual user, f different file
+        if(message.author == ('327773882566311937')){        //gang steve
+            for (var f = 0; f < ni.length; f++) {
+                if(message.content.includes(ni[f])){
+                    // Data which will need to add in f file.
+                    fsLibrary.readFile('./things/6.txt', (error, aaj) => {
+                        if (error) throw err;
+                        let a = parseInt(aaj) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/6.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+            for (var F = 0; F < nig.length; F++) {
+                if(message.content === (nig[F])){
+                    // Data which will need to add in F file.
+                    fsLibrary.readFile('./things/6.txt', (error, aak) => {
+                        if (error) throw err;
+                        let a = parseInt(aak) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/6.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+        }
+    
+            // for each individual user, f different file
+        if(message.author == ('372987776745865216')){         //ghassan
+            for (var g = 0; g < ni.length; g++) {
+                if(message.content.includes(ni[g])){
+                    // Data which will need to add in f file.
+                    fsLibrary.readFile('./things/7.txt', (error, aal) => {
+                        if (error) throw err;
+                        let a = parseInt(aal) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/7.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+            for (var G = 0; G < nig.length; G++) {
+                if(message.content === (nig[G])){
+                    // Data which will need to add in f file.
+                    fsLibrary.readFile('./things/7.txt', (error, aam) => {
+                        if (error) throw err;
+                        let a = parseInt(aam) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/7.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+        }
+    
+            // for each individual user, a different file
+        if(message.author == ('337096500439941120')){          //syed haider
+            for (var h = 0; h < ni.length; h++) {
+                if(message.content.includes(ni[h])){
+                    // Data which will need to add in a file.
+                    fsLibrary.readFile('./things/8.txt', (error, aan) => {
+                        if (error) throw err;
+                        let a = parseInt(aan) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/8.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+            for (var H = 0; H < nig.length; H++) {
+                if(message.content === (nig[H])){
+                    // Data which will need to add in a file.
+                    fsLibrary.readFile('./things/8.txt', (error, aao) => {
+                        if (error) throw err;
+                        let a = parseInt(aao) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/8.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+        }
+    
+            // for each individual user, i different file
+        if(message.author == ('552012442318798870')){         //kingo
+            for (var i = 0; i < ni.length; i++) {
+                if(message.content.includes(ni[i])){
+                    // Data which will need to add in i file.
+                    fsLibrary.readFile('./things/9.txt', (error, aap) => {
+                        if (error) throw err;
+                        let a = parseInt(aap) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/9.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+            for (var I = 0; I < nig.length; I++) {
+                if(message.content === (nig[I])){
+                    // Data which will need to add in I file.
+                    fsLibrary.readFile('./things/9.txt', (error, aaq) => {
+                        if (error) throw err;
+                        let a = parseInt(aaq) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/9.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+        }
+    
+            // for each individual user, i different file
+        if(message.author == ('707492264426995762')){          //nigoline tan
+            for (var j = 0; j < ni.length; j++) {
+                if(message.content.includes(ni[j])){
+                    // Data which will need to add in i file.
+                    fsLibrary.readFile('./things/10.txt', (error, aar) => {
+                        if (error) throw err;
+                        let i = parseInt(aar) + 1
+                        let data = i.toString()
+                        fsLibrary.writeFile('./things/10.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+            for (var J = 0; J < nig.length; J++) {
+                if(message.content === (nig[J])){
+                    // Data which will need to add in i file.
+                    fsLibrary.readFile('./things/10.txt', (error, aas) => {
+                        if (error) throw err;
+                        let i = parseInt(aas) + 1
+                        let data = i.toString()
+                        fsLibrary.writeFile('./things/10.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+        }
+    
+            // for each individual user, a different file
+        if(message.author == ('438949233471520768')){        //caio marinho
+            for (var k = 0; k < ni.length; k++) {
+                if(message.content.includes(ni[k])){
+                    // Data which will need to add in a file.
+                    fsLibrary.readFile('./things/11.txt', (error, aat) => {
+                        if (error) throw err;
+                        let a = parseInt(aat) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/11.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+            for (var K = 0; K < nig.length; K++) {
+                if(message.content === (nig[K])){
+                    // Data which will need to add in a file.
+                    fsLibrary.readFile('./things/11.txt', (error, aau) => {
+                        if (error) throw err;
+                        let a = parseInt(aau) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/11.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+        }
+    
+            // for each individual user, l different file
+        if(message.author == ('400187146662707202')){            //niggith
+            for (var l = 0; l < ni.length; l++) {
+                if(message.content.includes(ni[l])){
+                    // Data which will need to add in l file.
+                    fsLibrary.readFile('./things/12.txt', (error, aav) => {
+                        if (error) throw err;
+                        let a = parseInt(aav) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/12.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+            for (var L = 0; L < nig.length; L++) {
+                if(message.content === (nig[L])){
+                    // Data which will need to add in L file.
+                    fsLibrary.readFile('./things/12.txt', (error, aaw) => {
+                        if (error) throw err;
+                        let a = parseInt(aaw) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/12.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+        }
+    
+            // for each individual user, l different file
+        if(message.author == ('886822807479128065')){         //ramsey
+            for (var m = 0; m < ni.length; m++) {
+                if(message.content.includes(ni[m])){
+                    // Data which will need to add in l file.
+                    fsLibrary.readFile('./things/13.txt', (error, aax) => {
+                        if (error) throw err;
+                        let a = parseInt(aax) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/13.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+            for (var M = 0; M < nig.length; M++) {
+                if(message.content === (nig[M])){
+                    // Data which will need to add in l file.
+                    fsLibrary.readFile('./things/13.txt', (error, aay) => {
+                        if (error) throw err;
+                        let a = parseInt(aay) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/13.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+        }
+    
+        // for each individual user, a different file
+        if(message.author == ('737280378532003960')){       //gang steve alt
+            for (var n = 0; n < ni.length; n++) {
+                if(message.content.includes(ni[n])){
+                    // Data which will need to add in a file.
+                    fsLibrary.readFile('./things/14.txt', (error, aaz) => {
+                        if (error) throw err;
+                        let a = parseInt(aaz) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/14.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+            for (var N = 0; N < nig.length; N++) {
+                if(message.content === (nig[N])){
+                    // Data which will need to add in a file.
+                    fsLibrary.readFile('./things/14.txt', (error, aba) => {
+                        if (error) throw err;
+                        let a = parseInt(aba) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/14.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+        }
+     
+            // for each individual user, o different file
+        if(message.author == ('398725227585994754')){        //cooper
+            for (var o = 0; o < ni.length; o++) {
+                if(message.content.includes(ni[o])){
+                    // Data which will need to add in o file.
+                    fsLibrary.readFile('./things/15.txt', (error, abb) => {
+                        if (error) throw err;
+                        let a = parseInt(abb) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/15.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+            for (var O = 0; O < nig.length; O++) {
+                if(message.content === (nig[O])){
+                    // Data which will need to add in O file.
+                    fsLibrary.readFile('./things/15.txt', (error, abc) => {
+                        if (error) throw err;
+                        let a = parseInt(abc) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/15.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+        }
+     
+            // for each individual user, o different file
+        if(message.author == ('520808954620805139')){    //kalmar
+            for (var p = 0; p < ni.length; p++) {
+                if(message.content.includes(ni[p])){
+                    // Data which will need to add in o file.
+                    fsLibrary.readFile('./things/16.txt', (error, abd) => {
+                        if (error) throw err;
+                        let o = parseInt(abd) + 1
+                        let data = o.toString()
+                        fsLibrary.writeFile('./things/16.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+            for (var P = 0; P < nig.length; P++) {
+                if(message.content === (nig[P])){
+                    // Data which will need to add in o file.
+                    fsLibrary.readFile('./things/16.txt', (error, abe) => {
+                        if (error) throw err;
+                        let o = parseInt(abe) + 1
+                        let data = o.toString()
+                        fsLibrary.writeFile('./things/16.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+        }
+     
+            // for each individual user, a different file
+        if(message.author == ('674744224608026624')){        //caio alt
+            for (var q = 0; q < ni.length; q++) {
+                if(message.content.includes(ni[q])){
+                    // Data which will need to add in a file.
+                    fsLibrary.readFile('./things/17.txt', (error, abf) => {
+                        if (error) throw err;
+                        let a = parseInt(abf) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/17.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+            for (var Q = 0; Q < nig.length; Q++) {
+                if(message.content === (nig[Q])){
+                    // Data which will need to add in a file.
+                    fsLibrary.readFile('./things/17.txt', (error, abg) => {
+                        if (error) throw err;
+                        let a = parseInt(abg) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/17.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+        }
+     
+            // for each individual user, r different file
+        if(message.author == ('283856988335505408')){          //kalmar alt
+            for (var r = 0; r < ni.length; r++) {
+                if(message.content.includes(ni[r])){
+                    // Data which will need to add in r file.
+                    fsLibrary.readFile('./things/18.txt', (error, abh) => {
+                        if (error) throw err;
+                        let a = parseInt(abh) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/18.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+            for (var R = 0; R < nig.length; R++) {
+                if(message.content === (nig[R])){
+                    // Data which will need to add in R file.
+                    fsLibrary.readFile('./things/18.txt', (error, abi) => {
+                        if (error) throw err;
+                        let a = parseInt(abi) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/18.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+        }
+     
+            // for each individual user, r different file
+        if(message.author == ('868125292529586176')){      //nikita
+            for (var s = 0; s < ni.length; s++) {
+                if(message.content.includes(ni[s])){
+                    // Data which will need to add in r file.
+                    fsLibrary.readFile('./things/19.txt', (error, abj) => {
+                        if (error) throw err;
+                        let a = parseInt(abj) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/19.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+            for (var S = 0; S < nig.length; S++) {
+                if(message.content === (nig[S])){
+                    // Data which will need to add in r file.
+                    fsLibrary.readFile('./things/19.txt', (error, abk) => {
+                        if (error) throw err;
+                        let a = parseInt(abk) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/19.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+        }
+     
+            // for each individual user, a different file
+        if(message.author == ('517789769162555422')){     //fleeton
+            for (var t = 0; t < ni.length; t++) {
+                if(message.content.includes(ni[t])){
+                    // Data which will need to add in a file.
+                    fsLibrary.readFile('./things/20.txt', (error, abl) => {
+                        if (error) throw err;
+                        let a = parseInt(abl) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/20.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+            for (var T = 0; T < nig.length; T++) {
+                if(message.content === (nig[T])){
+                    // Data which will need to add in a file.
+                    fsLibrary.readFile('./things/20.txt', (error, abm) => {
+                        if (error) throw err;
+                        let a = parseInt(abm) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/20.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+        }
+     
+            // for each individual user, u different file
+        if(message.author == ('424156215896178709')){    //emre
+            for (var u = 0; u < ni.length; u++) {
+                if(message.content.includes(ni[u])){
+                    // Data which will need to add in u file.
+                    fsLibrary.readFile('./things/21.txt', (error, abn) => {
+                        if (error) throw err;
+                        let a = parseInt(abn) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/21.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+            for (var U = 0; U < nig.length; U++) {
+                if(message.content === (nig[U])){
+                    // Data which will need to add in U file.
+                    fsLibrary.readFile('./things/21.txt', (error, abo) => {
+                        if (error) throw err;
+                        let a = parseInt(abo) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/21.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+        }
+     
+            // for each individual user, u different file
+        if(message.author == ('276955094778642432')){         // david coulam
+            for (var v = 0; v < ni.length; v++) {
+                if(message.content.includes(ni[v])){
+                    // Data which will need to add in u file.
+                    fsLibrary.readFile('./things/22.txt', (error, abp) => {
+                        if (error) throw err;
+                        let u = parseInt(abp) + 1
+                        let data = u.toString()
+                        fsLibrary.writeFile('./things/22.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+            for (var V = 0; V < nig.length; V++) {
+                if(message.content === (nig[V])){
+                    // Data which will need to add in u file.
+                    fsLibrary.readFile('./things/22.txt', (error, abq) => {
+                        if (error) throw err;
+                        let u = parseInt(abq) + 1
+                        let data = u.toString()
+                        fsLibrary.writeFile('./things/22.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+        }
+     
+            // for each individual user, a different file
+        if(message.author == ('897595663288778786')){             //zena
+            for (var w = 0; w < ni.length; w++) {
+                if(message.content.includes(ni[w])){
+                    // Data which will need to add in a file.
+                    fsLibrary.readFile('./things/23.txt', (error, abr) => {
+                        if (error) throw err;
+                        let a = parseInt(abr) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/23.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+            for (var W = 0; W < nig.length; W++) {
+                if(message.content === (nig[W])){
+                    // Data which will need to add in a file.
+                    fsLibrary.readFile('./things/23.txt', (error, abs) => {
+                        if (error) throw err;
+                        let a = parseInt(abs) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/23.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+        }
+     
+            // for each individual user, x different file
+        if(message.author == ('451634294159572992')){         //mahin
+            for (var x = 0; x < ni.length; x++) {
+                if(message.content.includes(ni[x])){
+                    // Data which will need to add in x file.
+                    fsLibrary.readFile('./things/24.txt', (error, abt) => {
+                        if (error) throw err;
+                        let a = parseInt(abt) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/24.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+            for (var X = 0; X < nig.length; X++) {
+                if(message.content === (nig[X])){
+                    // Data which will need to add in X file.
+                    fsLibrary.readFile('./things/24.txt', (error, abu) => {
+                        if (error) throw err;
+                        let a = parseInt(abu) + 1
+                        let data = a.toString()
+                        fsLibrary.writeFile('./things/24.txt', data, (error) => {
+                            if (error) throw err;
+                        })
+                    })
+                    message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+                }
+            }
+        }
+                // for each individual user, x different file
+    if(message.author == ('1005009857339981895')){             //mathisyum#3026 (carrot alt)
+        for (var y = 0; y < ni.length; y++) {
+            if(message.content.includes(ni[y])){
+                // Data which will need to add in x file.
+                fsLibrary.readFile('./things/25.txt', (error, abv) => {
                     if (error) throw err;
+                    let a = parseInt(abv) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/25.txt', data, (error) => {
+                        if (error) throw err;
+                    })
                 })
-            })
-            message.channel.send(":warning: you said n word!! :warning:")
+                message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+            }
+        }
+        for (var Y = 0; Y < nig.length; Y++) {
+            if(message.content === (nig[Y])){
+                // Data which will need to add in x file.
+                fsLibrary.readFile('./things/25.txt', (error, abw) => {
+                    if (error) throw err;
+                    let a = parseInt(abw) + 1
+                    let data = a.toString()
+                    fsLibrary.writeFile('./things/25.txt', data, (error) => {
+                        if (error) throw err;
+                    })
+                })
+                message.channel.send(":warning: you said n-word!! (or had the intention to) :warning:")
+            }
         }
     }
 
-        // for each individual user, a different file
-        for (var p = 0; p < nigga.length; p++) {
-            if(message.content.includes(nigga[p])){
-                // Data which will need to add in a file.
-                fsLibrary.readFile('./things/1.txt', (error, txtString) => {
+})
+
+client.on('message', message => {
+    if (message.author == client.user)
+        return
+    if (message.author.bot) return
+
+    if(!message.content.startsWith(prefix) || message.author.bot) return;
+
+
+    // if(message.author == ('626688631309991937')){  
+    //     if(message.content.includes('!add')){
+    //         let split_message = message.content.split(' ')
+    //         console.log(split_message[0]);
+    //         console.log(split_message[1]);
+    //         fsLibrary.readFile('./things/1.txt', (error, acx) => {
+    //             if (error) throw err;
+    //             let a = parseInt(acx) + parseInt(split_message[1])
+    //             let data = a.toString()
+    //             fsLibrary.writeFile('./things/1.txt', data, (error) => {
+    //                 if (error) throw err;
+    //             })
+    //             message.channel.send('updated?')
+    //         })
+    //     }
+    // }
+
+    if(message.author == ('626688631309991937')){  
+        if(message.content.includes('!add')){
+            let split_message = message.content.split(' ')
+            console.log(split_message[0]);
+            console.log(split_message[1]);
+            console.log(split_message[2]);
+            fsLibrary.readFile('./things/' + split_message[1] + '.txt', (error, acx) => {
+                if (error) throw err;
+                let a = parseInt(acx) + parseInt(split_message[2])
+                let data = a.toString()
+                fsLibrary.writeFile('./things/' + split_message[1] + '.txt', data, (error) => {
                     if (error) throw err;
-                    let a = parseInt(txtString) + 1
-                    let data = a.toString()
-                    fsLibrary.writeFile('./things/1.txt', data, (error) => {
-                        if (error) throw err;
-                    })
                 })
-                message.channel.send(":warning: you said n word!! :warning:")
-            }
+                message.channel.send('updated?')
+            })
         }
-        for (var h = 0; h < nigga.length; h++) {
-            if(message.content === (nig[h])){
-                // Data which will need to add in a file.
-                fsLibrary.readFile('./things/1.txt', (error, txtString) => {
-                    if (error) throw err;
-                    let a = parseInt(txtString) + 1
-                    let data = a.toString()
-                    fsLibrary.writeFile('./things/1.txt', data, (error) => {
-                        if (error) throw err;
-                    })
-                })
-                message.channel.send(":warning: you said n word!! :warning:")
-            }
-        }
+    }
 
 })
 
@@ -119,10 +905,156 @@ client.on('message', message =>{
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
 
-    if(command === 'n-word-times'){
-        fsLibrary.readFile('./things/1.txt', (error, txtString) => {
+
+    if(command === 'shou-yi'){
+        fsLibrary.readFile('./things/1.txt', (error, abx) => {
             if (error) throw err;
-            message.channel.send('x person ' + txtString.toString());
+            message.channel.send('Shou-Yi - ' + abx.toString());
+        })
+    }
+    if(command === 'michael'){
+        fsLibrary.readFile('./things/2.txt', (error, aby) => {
+            if (error) throw err;
+            message.channel.send('Michael - ' + aby.toString());
+        })
+    }
+    if(command === 'mark'){
+        fsLibrary.readFile('./things/3.txt', (error, abz) => {
+            if (error) throw err;
+            message.channel.send('Mark - ' + abz.toString());
+        })
+    }
+    if(command === 'heyheyheychoc'){
+        fsLibrary.readFile('./things/4.txt', (error, aca) => {
+            if (error) throw err;
+            message.channel.send('Alex I - ' + aca.toString());
+        })
+    }
+    if(command === 'niv'){
+        fsLibrary.readFile('./things/5.txt', (error, acb) => {
+            if (error) throw err;
+            message.channel.send('Nivriti - ' + acb.toString());
+        })
+    }
+    if(command === 'gangsteve'){
+        fsLibrary.readFile('./things/6.txt', (error, acc) => {
+            if (error) throw err;
+            message.channel.send('Sam W - ' + acc.toString());
+        })
+    }
+    if(command === 'goose'){
+        fsLibrary.readFile('./things/7.txt', (error, acd) => {
+            if (error) throw err;
+            message.channel.send('Ghassan - ' + acd.toString());
+        })
+
+    }
+    if(command === 'syed'){
+        fsLibrary.readFile('./things/8.txt', (error, ace) => {
+            if (error) throw err;
+            message.channel.send('Syed - ' + ace.toString());
+        })
+    }
+    if(command === 'kingo'){
+        fsLibrary.readFile('./things/9.txt', (error, acf) => {
+            if (error) throw err;
+            message.channel.send('Kingo - ' + acf.toString());
+        })
+    }
+    if(command === 'carrot'){
+        fsLibrary.readFile('./things/10.txt', (error, acg) => {
+            if (error) throw err;
+            message.channel.send('Caroline - ' + acg.toString());
+        })
+    }
+    if(command === 'caio'){
+        fsLibrary.readFile('./things/11.txt', (error, ach) => {
+            if (error) throw err;
+            message.channel.send('Caio - ' + ach.toString());
+        })
+    }
+    if(command === 'nikith'){
+        fsLibrary.readFile('./things/12.txt', (error, aci) => {
+            if (error) throw err;
+            message.channel.send('Nikith - ' + aci.toString());
+        })
+    }
+    if(command === 'ramsey'){
+        fsLibrary.readFile('./things/13.txt', (error, acj) => {
+            if (error) throw err;
+            message.channel.send('Ramsey - ' + acj.toString());
+        })
+    }
+    if(command === 'gangstevealt'){
+        fsLibrary.readFile('./things/14.txt', (error, ack) => {
+            if (error) throw err;
+            message.channel.send('Sam W Alt - ' + ack.toString());
+        })
+    }
+    if(command === 'cooper'){
+        fsLibrary.readFile('./things/15.txt', (error, acl) => {
+            if (error) throw err;
+            message.channel.send('Cooper - ' + acl.toString());
+        })
+    }
+    if(command === 'kalmar'){
+        fsLibrary.readFile('./things/16.txt', (error, acm) => {
+            if (error) throw err;
+            message.channel.send('Alex K - ' + acm.toString());
+        })
+    }
+    if(command === 'caioalt'){
+        fsLibrary.readFile('./things/17.txt', (error, acn) => {
+            if (error) throw err;
+            message.channel.send('Caio Alt - ' + acn.toString());
+        })
+    }
+    if(command === 'kalmaralt'){
+        fsLibrary.readFile('./things/18.txt', (error, aco) => {
+            if (error) throw err;
+            message.channel.send('Alex K Alt - ' + aco.toString());
+        })
+    }
+    if(command === 'nikita'){
+        fsLibrary.readFile('./things/19.txt', (error, acp) => {
+            if (error) throw err;
+            message.channel.send('Nikita - ' + acp.toString());
+        })
+    }
+    if(command === 'fleeton'){
+        fsLibrary.readFile('./things/20.txt', (error, acq) => {
+            if (error) throw err;
+            message.channel.send('Nicholas - ' + acq.toString());
+        })
+    }
+    if(command === 'emre'){
+        fsLibrary.readFile('./things/21.txt', (error, acr) => {
+            if (error) throw err;
+            message.channel.send('Emre - ' + acr.toString());
+        })
+    }
+    if(command === 'david'){
+        fsLibrary.readFile('./things/22.txt', (error, acs) => {
+            if (error) throw err;
+            message.channel.send('David - ' + acs.toString());
+        })
+    }
+    if(command === 'zena'){
+        fsLibrary.readFile('./things/23.txt', (error, act) => {
+            if (error) throw err;
+            message.channel.send('Zena - ' + act.toString());
+        })
+    }
+    if(command === 'mahin'){
+        fsLibrary.readFile('./things/24.txt', (error, acu) => {
+            if (error) throw err;
+            message.channel.send('Mahin - ' + acu.toString());
+        })
+    }
+    if(command === 'mathisyum#3026'){
+        fsLibrary.readFile('./things/25.txt', (error, acv) => {
+            if (error) throw err;
+            message.channel.send('Caroline Alt - ' + acv.toString());
         })
     }
 
@@ -180,7 +1112,7 @@ client.on('message', message =>{
         .setTitle('SushiBot')
         .setURL('https://github.com/Sushi1725/Roll-a-Ball---Remixed.git')
         .setAuthor({ name: 'Shou-Yi Lai', iconURL: 'https://cdn.discordapp.com/attachments/948116413393014814/953225866513633330/unknown.png', url: 'https://github.com/Sushi1725/Roll-a-Ball---Remixed.git' })
-        .setDescription('A bot made by Sushi🍣 × 賴守義#9501')
+        .setDescription('A bot made by sushi#0229')
         .setThumbnail('https://cdn.discordapp.com/attachments/948116413393014814/953225866513633330/unknown.png')
         .addFields(
             { name: 'Commands', value: '!ping \n !github \n !website \n !images \n !compilation'},
@@ -191,7 +1123,7 @@ client.on('message', message =>{
         //.addField('Inline field title', 'Some value here', true)
         //.setImage('https://i.imgur.com/AfFp7pu.png')
         .setTimestamp()
-        .setFooter({ text: 'Sushi🍣 × 賴守義#9501', iconURL: 'https://cdn.discordapp.com/attachments/948116413393014814/953225866513633330/unknown.png' });
+        .setFooter({ text: 'sushi#0229', iconURL: 'https://cdn.discordapp.com/attachments/948116413393014814/953225866513633330/unknown.png' });
 
         message.channel.send({ embeds: [exampleEmbed] });
     }
@@ -309,7 +1241,7 @@ client.on('message', message =>{
 //         .setTitle('SushiBot')
 //         .setURL('https://github.com/Sushi1725/Roll-a-Ball---Remixed.git')
 //         .setAuthor({ name: 'Shou-Yi Lai', iconURL: 'https://cdn.discordapp.com/attachments/948116413393014814/953225866513633330/unknown.png', url: 'https://github.com/Sushi1725/Roll-a-Ball---Remixed.git' })
-//         .setDescription('A bot made by Sushi🍣 × 賴守義#9501')
+//         .setDescription('A bot made by sushi#0229')
 //         .setThumbnail('https://cdn.discordapp.com/attachments/948116413393014814/953225866513633330/unknown.png')
 //         .addFields(
 //             { name: 'Commands', value: '!ping \n !github \n !website \n !images \n !compilation'},
@@ -320,7 +1252,7 @@ client.on('message', message =>{
 //         //.addField('Inline field title', 'Some value here', true)
 //         //.setImage('https://i.imgur.com/AfFp7pu.png')
 //         .setTimestamp()
-//         .setFooter({ text: 'Sushi🍣 × 賴守義#9501', iconURL: 'https://cdn.discordapp.com/attachments/948116413393014814/953225866513633330/unknown.png' });
+//         .setFooter({ text: 'sushi#0229', iconURL: 'https://cdn.discordapp.com/attachments/948116413393014814/953225866513633330/unknown.png' });
 
 //         message.channel.send({ embeds: [exampleEmbed] });
 //     }
@@ -856,4 +1788,4 @@ client.on('message', message =>{
 //     }
 // })
 
-client.login('');
+client.login('OTQ3MDk2OTc3MDYwMDEyMDYy.YhoSyw.8U1Grib0pi7XnJjvoPqaODmYEmc');

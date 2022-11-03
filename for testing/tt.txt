@@ -1,0 +1,150 @@
+    if(command === 'sushi#0229'){
+        fsLibrary.readFile('./things/1.txt', (error, txtString) => {
+            if (error) throw err;
+            message.channel.send('Shou-Yi - ' + txtString.toString());
+        })
+    }
+    if(command === 'qwertyuiopasdfghjklzxcvbnm#8138'){
+        fsLibrary.readFile('./things/2.txt', (error, txtString) => {
+            if (error) throw err;
+            message.channel.send('Michael - ' + txtString.toString());
+        })
+    }
+    if(command === 'Grim#1018'){
+        fsLibrary.readFile('./things/3.txt', (error, txtString) => {
+            if (error) throw err;
+            message.channel.send('Mark - ' + txtString.toString());
+        })
+    }
+    if(command === 'Heyheyheychocolaterain#2698'){
+        fsLibrary.readFile('./things/4.txt', (error, txtString) => {
+            if (error) throw err;
+            message.channel.send('Alex I - ' + txtString.toString());
+        })
+    }
+    if(command === 'Existential Dread#9976'){
+        fsLibrary.readFile('./things/5.txt', (error, txtString) => {
+            if (error) throw err;
+            message.channel.send('Nivriti - ' + txtString.toString());
+        })
+    }
+    if(command === 'gang steve#4121'){
+        fsLibrary.readFile('./things/6.txt', (error, txtString) => {
+            if (error) throw err;
+            message.channel.send('Sam W - ' + txtString.toString());
+        })
+    }
+    if(command === 'Goosan#6969'){
+        fsLibrary.readFile('./things/7.txt', (error, txtString) => {
+            if (error) throw err;
+            message.channel.send('Ghassan - ' + txtString.toString());
+        })
+    }
+    if(command === 'hassan_#8033'){
+        fsLibrary.readFile('./things/8.txt', (error, txtString) => {
+            if (error) throw err;
+            message.channel.send('Syed - ' + txtString.toString());
+        })
+    }
+    if(command === 'Kingo1983#0909'){
+        fsLibrary.readFile('./things/9.txt', (error, txtString) => {
+            if (error) throw err;
+            message.channel.send('Kingo - ' + txtString.toString());
+        })
+    }
+    if(command === 'carrot#8134'){
+        fsLibrary.readFile('./things/10.txt', (error, txtString) => {
+            if (error) throw err;
+            message.channel.send('Caroline - ' + txtString.toString());
+        })
+    }
+    if(command === 'mcaio#2057'){
+        fsLibrary.readFile('./things/11.txt', (error, txtString) => {
+            if (error) throw err;
+            message.channel.send('Caio - ' + txtString.toString());
+        })
+    }
+    if(command === 'nik#4318'){
+        fsLibrary.readFile('./things/12.txt', (error, txtString) => {
+            if (error) throw err;
+            message.channel.send('Nikith - ' + txtString.toString());
+        })
+    }
+    if(command === 'Rasey#4219'){
+        fsLibrary.readFile('./things/13.txt', (error, txtString) => {
+            if (error) throw err;
+            message.channel.send('Ramsey - ' + txtString.toString());
+        })
+    }
+    if(command === 'sasuke irl#7291'){
+        fsLibrary.readFile('./things/14.txt', (error, txtString) => {
+            if (error) throw err;
+            message.channel.send('Sam W Alt - ' + txtString.toString());
+        })
+    }
+    if(command === 'Scooper#9636'){
+        fsLibrary.readFile('./things/15.txt', (error, txtString) => {
+            if (error) throw err;
+            message.channel.send('Cooper - ' + txtString.toString());
+        })
+    }
+    if(command === 'Sparkar#7458'){
+        fsLibrary.readFile('./things/16.txt', (error, txtString) => {
+            if (error) throw err;
+            message.channel.send('Alex K - ' + txtString.toString());
+        })
+    }
+    if(command === 'sugon#5242'){
+        fsLibrary.readFile('./things/17.txt', (error, txtString) => {
+            if (error) throw err;
+            message.channel.send('Caio Alt - ' + txtString.toString());
+        })
+    }
+    if(command === 'TEchnogogog#0719'){
+        fsLibrary.readFile('./things/18.txt', (error, txtString) => {
+            if (error) throw err;
+            message.channel.send('Alex K Alt - ' + txtString.toString());
+        })
+    }
+    if(command === 'The Putinator#3580'){
+        fsLibrary.readFile('./things/19.txt', (error, txtString) => {
+            if (error) throw err;
+            message.channel.send('Nikita - ' + txtString.toString());
+        })
+    }
+    if(command === 'TheAverageNick#2757'){
+        fsLibrary.readFile('./things/20.txt', (error, txtString) => {
+            if (error) throw err;
+            message.channel.send('Nicholas - ' + txtString.toString());
+        })
+    }
+    if(command === '7in#9444'){
+        fsLibrary.readFile('./things/21.txt', (error, txtString) => {
+            if (error) throw err;
+            message.channel.send('Emre - ' + txtString.toString());
+        })
+    }
+    if(command === 'willandra#4651'){
+        fsLibrary.readFile('./things/22.txt', (error, txtString) => {
+            if (error) throw err;
+            message.channel.send('David - ' + txtString.toString());
+        })
+    }
+    if(command === 'zenaa#1957'){
+        fsLibrary.readFile('./things/23.txt', (error, txtString) => {
+            if (error) throw err;
+            message.channel.send('Zena - ' + txtString.toString());
+        })
+    }
+    if(command === 'Mahorny#7050'){
+        fsLibrary.readFile('./things/24.txt', (error, txtString) => {
+            if (error) throw err;
+            message.channel.send('Mahin - ' + txtString.toString());
+        })
+    }
+    if(command === 'mathisyum#3026'){
+        fsLibrary.readFile('./things/25.txt', (error, txtString) => {
+            if (error) throw err;
+            message.channel.send('Caroline Alt - ' + txtString.toString());
+        })
+    }
